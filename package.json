@@ -1,0 +1,23 @@
+{
+  "name": "beetroot_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iva-nova-vita/beetroot_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iva-nova-vita/beetroot_project/issues"
+  },
+  "homepage": "https://github.com/Iva-nova-vita/beetroot_project#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
