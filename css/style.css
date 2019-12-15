@@ -364,7 +364,7 @@ nav {
   height: 200px;
   align-items: center; }
 
-#logo img {
+.logo img {
   height: 75px;
   width: 240px; }
 
@@ -471,9 +471,6 @@ button[type="submit"] {
   grid-gap: 5px;
   height: 430px; }
   #banners button {
-    position: absolute;
-    bottom: 200px;
-    left: 30px;
     background: #fcfcfc;
     border-radius: 35px;
     border: none;
@@ -506,6 +503,10 @@ button[type="submit"] {
     position: absolute;
     right: 30px;
     bottom: 30px; }
+  #firstSlidebannersSlider button {
+    position: absolute;
+    bottom: 200px;
+    left: 30px; }
 
 #firstSmallBanner {
   grid-area: firstSmallBanner;
@@ -549,7 +550,7 @@ button[type="submit"] {
   #secondSmallBanner button {
     position: absolute;
     bottom: 30px;
-    left: 270px; }
+    right: 30px; }
 
 .wrap {
   display: flex;
@@ -588,13 +589,13 @@ button[type="submit"] {
   #category .wrap {
     justify-content: space-around; }
   #category > a {
-    background: #FCFCFC;
-    border: 1px solid #E0E0E0;
+    background: #fcfcfc;
+    border: 1px solid #e0e0e0;
     border-radius: 5px; }
 
 #popGoods {
   margin-top: 50px;
-  background-color: #FCFCFC; }
+  background-color: #fcfcfc; }
   #popGoods h2 {
     font-size: 30px;
     font-weight: 400;
@@ -638,7 +639,7 @@ button[type="submit"] {
     font-weight: 500;
     font-size: 30px;
     letter-spacing: -0.04em;
-    color: #C70015; }
+    color: #c70015; }
   #lastNews span {
     font-size: 16px;
     letter-spacing: 0.04em; }
@@ -648,6 +649,44 @@ button[type="submit"] {
   #lastNews button {
     width: 200px;
     height: 60px;
-    background: #C70015;
+    background: #c70015;
     border-radius: 35px;
     color: white; }
+
+#emailNewsletter {
+  background-color: #E5E5E5;
+  padding: 0 15%;
+  margin-top: 50px; }
+  #emailNewsletter .wrap {
+    justify-content: space-around; }
+  #emailNewsletter form {
+    position: relative; }
+    #emailNewsletter form span {
+      color: #828282; }
+  #emailNewsletter button {
+    right: 40px; }
+  #emailNewsletter input {
+    height: 60px;
+    border: none;
+    width: 35%;
+    display: block;
+    margin-right: 30px;
+    border-radius: 35px;
+    padding: 0 3% 0 3%; }
+    #emailNewsletter input::placeholder {
+      color: #bdbdbd;
+      font-weight: 500; }
+
+footer {
+  padding-top: 50px;
+  background-color: #fcfcfc; }
+  footer .logo {
+    padding-top: 50px; }
+  footer .wrap {
+    align-items: flex-start; }
+  footer h4, footer a {
+    font-size: 18px;
+    font-weight: 500; }
+  footer a {
+    margin: 12px 0;
+    display: block; }

@@ -4,7 +4,7 @@ body {
   font-family: "Rubik", sans-serif;
   color: black;
   button {
-      cursor: pointer;
+    cursor: pointer;
   }
 }
 .container {
@@ -26,7 +26,7 @@ nav {
 
   height: 60px;
   ul {
-      padding: 0;
+    padding: 0;
     list-style-type: none;
 
     display: flex;
@@ -71,7 +71,7 @@ nav {
   height: 200px;
   align-items: center;
 }
-#logo {
+.logo {
   img {
     height: 75px;
     width: 240px;
@@ -122,21 +122,20 @@ nav {
   }
 }
 #search {
-    padding: 0 15%;
-    background-color: #e5e5e5;
-    form {
+  padding: 0 15%;
+  background-color: #e5e5e5;
+  form {
+    position: relative;
 
-   
-  position: relative;
-  
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  input {
-    height: 60px;
-    border: none;
-  }}
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      height: 60px;
+      border: none;
+    }
+  }
 }
 #searchByName {
   width: 60%;
@@ -145,8 +144,6 @@ nav {
     color: #bdbdbd;
     font-weight: 500;
   }
-  
-    
 }
 #searchByNumber {
   width: 35%;
@@ -205,9 +202,7 @@ button[type="submit"] {
   grid-gap: 5px;
   height: 430px;
   button {
-    position: absolute;
-    bottom: 200px;
-    left: 30px;
+    
     background: #fcfcfc;
     border-radius: 35px;
 
@@ -249,7 +244,12 @@ button[type="submit"] {
     right: 30px;
     bottom: 30px;
   }
- 
+  button {
+     position: absolute;
+    bottom: 200px;
+    left: 30px; 
+  }
+  
 }
 #firstSmallBanner {
   grid-area: firstSmallBanner;
@@ -258,12 +258,12 @@ button[type="submit"] {
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   position: relative;
-  h2 {position: absolute;
+  h2 {
+    position: absolute;
     left: 30px;
     top: 10px;
     font-weight: 500;
-font-size: 24px;
-
+    font-size: 24px;
   }
   & > img {
     position: absolute;
@@ -283,12 +283,12 @@ font-size: 24px;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   position: relative;
-  h2 {position: absolute;
+  h2 {
+    position: absolute;
     right: 30px;
     top: 10px;
     font-weight: 500;
-font-size: 24px;
-
+    font-size: 24px;
   }
   & > img {
     position: absolute;
@@ -298,139 +298,180 @@ font-size: 24px;
   button {
     position: absolute;
     bottom: 30px;
-    
-    left: 270px;
+
+    right: 30px;
   }
 }
 .wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #searchByCategory {
-    
-        
-       
-        h2 {
-            font-size: 30px;
-            font-weight: 400;
-            letter-spacing: 0.04em;
-        }
-        ::nth-child(1) {
-            grid-area: category1;
-            
-        }
-        ::nth-child(2) {
-            grid-area: category2;
-        }
-        ::nth-child(3) {
-            grid-area: category3;
-        }
-        ::nth-child(4) {
-            grid-area: category4;
-        }
-        ::nth-child(5) {
-            grid-area: category5;
-        }
-        ::nth-child(6) {
-            grid-area: category6;
-        }
-    }
-    
-    
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+  ::nth-child(1) {
+    grid-area: category1;
+  }
+  ::nth-child(2) {
+    grid-area: category2;
+  }
+  ::nth-child(3) {
+    grid-area: category3;
+  }
+  ::nth-child(4) {
+    grid-area: category4;
+  }
+  ::nth-child(5) {
+    grid-area: category5;
+  }
+  ::nth-child(6) {
+    grid-area: category6;
+  }
+}
 
 #category {
-    .wrap{
-        justify-content: space-around;
-    }
-    display: grid;
+  .wrap {
+    justify-content: space-around;
+  }
+  display: grid;
   grid-template-areas:
     "category1 category2 category3"
     " category4 category5 category6";
-  grid-template-columns: 2fr 2fr 2fr ;
+  grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 40px;
-  &>a {
-    background: #FCFCFC;
-    border: 1px solid #E0E0E0;
+  & > a {
+    background: #fcfcfc;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
   }
 }
 #popGoods {
-    margin-top: 50px;
-background-color: #FCFCFC;
-h2 {
+  margin-top: 50px;
+  background-color: #fcfcfc;
+  h2 {
     font-size: 30px;
     font-weight: 400;
 
-
-letter-spacing: 0.04em;
-}
+    letter-spacing: 0.04em;
+  }
 }
 #popGoodsSlider {
-    width: 70%;
-    
-    padding: 40px 0 40px 0;
-    
+  width: 70%;
+
+  padding: 40px 0 40px 0;
 }
 .SlidePopGoodsSlider {
-    position: relative;
-    height: 400px;
-    margin: 0 10px 0 10px;
-    background: rgb(243, 241, 241);
-    padding: 20px 20px 0 20px;
+  position: relative;
+  height: 400px;
+  margin: 0 10px 0 10px;
+  background: rgb(243, 241, 241);
+  padding: 20px 20px 0 20px;
 
-border-radius: 5px;
+  border-radius: 5px;
 
-img {
+  img {
     margin: 0 auto;
-}
-div {
+  }
+  div {
     height: 200px;
     position: absolute;
     bottom: 0;
-}
-button {
+  }
+  button {
     border: none;
-}
+  }
 }
 .addToCart {
-    background-color: #c70015;
+  background-color: #c70015;
   border-radius: 35px;
   width: 65px;
   height: 35px;
 }
 #lastNews {
+  margin-top: 50px;
+  .news {
+    width: 355px;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 30px;
+
+    letter-spacing: -0.04em;
+    color: #c70015;
+  }
+  span {
+    font-size: 16px;
+
+    letter-spacing: 0.04em;
+  }
+  p {
+    font-size: 18px;
+    color: #828282;
+  }
+  button {
+    width: 200px;
+    height: 60px;
+    background: #c70015;
+    border-radius: 35px;
+    color: white;
+  }
+}
+#emailNewsletter {
+    background-color: #E5E5E5;
+    padding: 0 15%;
     margin-top: 50px;
-    .news {
-        width: 355px;
+    .wrap {
+        justify-content: space-around;
     }
-    h2 {
-        font-size: 30px;
-font-weight: 400;
-letter-spacing: 0.04em;
-    }
-    h3 {
-        font-weight: 500;
-font-size: 30px;
-
-letter-spacing: -0.04em;
-color: #C70015;
-    }
-    span {
-        font-size: 16px;
-
-letter-spacing: 0.04em;
-    }
-    p {
-        font-size: 18px;
+    form {
+     position: relative;   
+     span {
         color: #828282;
+     }
     }
     button {
-        width: 200px;
-height: 60px;
-background: #C70015;
-border-radius: 35px;
-color: white;
+        right: 40px;
     }
+    input {
+        height: 60px;
+        border: none;
+        width: 35%;
+  display: block;
+  margin-right: 30px;
+  border-radius: 35px;
+  padding: 0 3% 0 3%;
+  &::placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+      }
 }
+footer {
+    padding-top: 50px;
+    background-color: #fcfcfc;
+    .logo {
+        padding-top: 50px;
+    }
+  .wrap{
+      align-items: flex-start;
+  }
+    h4, a {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    a {
+        margin: 12px 0;
+        display: block;
+    }
+  }
+  
