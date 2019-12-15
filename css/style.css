@@ -625,3 +625,29 @@ button[type="submit"] {
   border-radius: 35px;
   width: 65px;
   height: 35px; }
+
+#lastNews {
+  margin-top: 50px; }
+  #lastNews .news {
+    width: 355px; }
+  #lastNews h2 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.04em; }
+  #lastNews h3 {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -0.04em;
+    color: #C70015; }
+  #lastNews span {
+    font-size: 16px;
+    letter-spacing: 0.04em; }
+  #lastNews p {
+    font-size: 18px;
+    color: #828282; }
+  #lastNews button {
+    width: 200px;
+    height: 60px;
+    background: #C70015;
+    border-radius: 35px;
+    color: white; }

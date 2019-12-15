@@ -400,3 +400,37 @@ button {
   width: 65px;
   height: 35px;
 }
+#lastNews {
+    margin-top: 50px;
+    .news {
+        width: 355px;
+    }
+    h2 {
+        font-size: 30px;
+font-weight: 400;
+letter-spacing: 0.04em;
+    }
+    h3 {
+        font-weight: 500;
+font-size: 30px;
+
+letter-spacing: -0.04em;
+color: #C70015;
+    }
+    span {
+        font-size: 16px;
+
+letter-spacing: 0.04em;
+    }
+    p {
+        font-size: 18px;
+        color: #828282;
+    }
+    button {
+        width: 200px;
+height: 60px;
+background: #C70015;
+border-radius: 35px;
+color: white;
+    }
+}
