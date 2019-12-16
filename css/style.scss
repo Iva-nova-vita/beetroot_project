@@ -474,4 +474,41 @@ footer {
         display: block;
     }
   }
+
+  .slick-prev
+  {
+      left: -355px;
+      top: 350px;
+  }
+  [dir='rtl'] .slick-prev
+  {
+      right: -25px;
+      left: auto;
+  }
+  .slick-prev:before
+  {
+      content: url(../images/arrow1.png);
+  }
+  [dir='rtl'] .slick-prev:before
+  {
+      content: url(../images/arrow1.png);
+  }
   
+  .slick-next
+  {
+      left: -265px;
+      top: 350px;
+  }
+  [dir='rtl'] .slick-next
+  {
+      right: auto;
+      left: -25px;
+  }
+  .slick-next:before
+  {
+      content: url(../images/arrow2.png);
+  }
+  [dir='rtl'] .slick-next:before
+  {
+      content: url(../images/arrow2.png);
+  }  
