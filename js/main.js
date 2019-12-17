@@ -26,5 +26,12 @@ $(function() {
         slidesToScroll: 1
       });
           
+      $('#bannersSlider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+       // dots: true,
+      });
 });
 

@@ -335,6 +335,10 @@ nav {
     justify-content: space-between; }
     nav ul li {
       height: 40px; }
+      nav ul li:hover {
+        border-bottom: 2px solid #c70015; }
+        nav ul li:hover a {
+          color: #c70015; }
       nav ul li a {
         vertical-align: middle; }
 
@@ -361,7 +365,7 @@ nav {
 
 #headerAside {
   display: flex;
-  height: 200px;
+  height: 170px;
   align-items: center; }
 
 .logo img {
@@ -369,7 +373,7 @@ nav {
   width: 240px; }
 
 #callMe {
-  width: 65%;
+  width: 68%;
   display: flex;
   justify-content: flex-end;
   align-items: center; }
@@ -389,7 +393,7 @@ nav {
       font-weight: 500; }
 
 #inShoppingBag {
-  width: 20%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -490,7 +494,7 @@ button[type="submit"] {
   background: #c70015;
   position: relative;
   border-radius: 5px;
-  height: 430px; }
+  height: 480px; }
   #firstSlidebannersSlider h1 {
     margin-top: 0;
     position: absolute;
@@ -550,35 +554,31 @@ button[type="submit"] {
   #secondSmallBanner button {
     position: absolute;
     bottom: 30px;
-    right: 30px; }
+    right: 15px; }
 
 .wrap {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-#searchByCategory h2 {
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 0.04em; }
-
-#searchByCategory ::nth-child(1) {
-  grid-area: category1; }
-
-#searchByCategory ::nth-child(2) {
-  grid-area: category2; }
-
-#searchByCategory ::nth-child(3) {
-  grid-area: category3; }
-
-#searchByCategory ::nth-child(4) {
-  grid-area: category4; }
-
-#searchByCategory ::nth-child(5) {
-  grid-area: category5; }
-
-#searchByCategory ::nth-child(6) {
-  grid-area: category6; }
+#searchByCategory {
+  margin-top: 100px; }
+  #searchByCategory h2 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.04em; }
+  #searchByCategory ::nth-child(1) {
+    grid-area: category1; }
+  #searchByCategory ::nth-child(2) {
+    grid-area: category2; }
+  #searchByCategory ::nth-child(3) {
+    grid-area: category3; }
+  #searchByCategory ::nth-child(4) {
+    grid-area: category4; }
+  #searchByCategory ::nth-child(5) {
+    grid-area: category5; }
+  #searchByCategory ::nth-child(6) {
+    grid-area: category6; }
 
 #category {
   display: grid;
@@ -690,9 +690,11 @@ footer {
   footer a {
     margin: 12px 0;
     display: block; }
+    footer a:hover {
+      color: #c70015; }
 
 .slick-prev {
-  left: -355px;
+  left: -305px;
   top: 350px; }
 
 [dir='rtl'] .slick-prev {
@@ -706,7 +708,7 @@ footer {
   content: url(../images/arrow1.png); }
 
 .slick-next {
-  left: -265px;
+  left: -215px;
   top: 350px; }
 
 [dir='rtl'] .slick-next {
