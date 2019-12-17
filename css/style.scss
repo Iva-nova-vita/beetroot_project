@@ -17,7 +17,9 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 15%;
 }
@@ -29,7 +31,10 @@ nav {
     padding: 0;
     list-style-type: none;
 
+    display: -ms-flexbox;
+
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     li {
       height: 40px;
@@ -54,7 +59,9 @@ nav {
 }
 
 #accountMenu {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 25%;
   height: 60px;
@@ -74,8 +81,10 @@ nav {
   }
 }
 #headerAside {
+  display: -ms-flexbox;
   display: flex;
   height: 170px;
+  -ms-flex-align: center;
   align-items: center;
 }
 .logo {
@@ -86,8 +95,11 @@ nav {
 }
 #callMe {
   width: 68%;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -ms-flex-align: center;
   align-items: center;
   a,
   p {
@@ -111,8 +123,11 @@ nav {
 }
 #inShoppingBag {
   width: 25%;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: center;
   align-items: center;
   a {
     padding: 0 10% 0 5%;
@@ -135,8 +150,11 @@ nav {
     position: relative;
 
     height: 100px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: center;
     justify-content: center;
     input {
       height: 60px;
@@ -147,6 +165,22 @@ nav {
 #searchByName {
   width: 60%;
   padding: 0 0 0 18%;
+  &::-webkit-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &::-moz-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &:-ms-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &::-ms-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
   &::placeholder {
     color: #bdbdbd;
     font-weight: 500;
@@ -158,6 +192,22 @@ nav {
   margin-left: 5px;
 
   padding: 0 3% 0 3%;
+  &::-webkit-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &::-moz-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &:-ms-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &::-ms-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
   &::placeholder {
     color: #bdbdbd;
     font-weight: 500;
@@ -169,8 +219,12 @@ button[type="submit"] {
   background: #c70015;
   border-radius: 35px;
   border: none;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
+
+  -ms-flex-pack: distribute;
 
   justify-content: space-around;
   font-weight: 500;
@@ -185,8 +239,12 @@ button[type="submit"] {
   background: #c70015;
   border-radius: 35px 0px 0px 35px;
   border: none;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
+
+  -ms-flex-pack: distribute;
 
   justify-content: space-around;
   font-weight: 500;
@@ -214,8 +272,12 @@ button[type="submit"] {
     border-radius: 35px;
 
     border: none;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
+
+    -ms-flex-pack: distribute;
 
     justify-content: space-around;
     font-weight: 500;
@@ -310,8 +372,11 @@ button[type="submit"] {
   }
 }
 .wrap {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: center;
   align-items: center;
 }
 #searchByCategory {
@@ -345,6 +410,7 @@ button[type="submit"] {
 
 #category {
   .wrap {
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   display: grid;
@@ -441,6 +507,7 @@ button[type="submit"] {
     padding: 0 15%;
     margin-top: 50px;
     .wrap {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
     form {
@@ -460,6 +527,22 @@ button[type="submit"] {
   margin-right: 30px;
   border-radius: 35px;
   padding: 0 3% 0 3%;
+  &::-webkit-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &::-moz-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &:-ms-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  &::-ms-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 500;
+  }
   &::placeholder {
     color: #bdbdbd;
     font-weight: 500;
@@ -473,6 +556,7 @@ footer {
         padding-top: 50px;
     }
   .wrap{
+      -ms-flex-align: start;
       align-items: flex-start;
   }
     h4, a {

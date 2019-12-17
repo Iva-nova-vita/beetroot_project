@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Iva-nova-vita/beetroot_project#readme",
   "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.0.2"
   }
 }

@@ -1,6 +1,6 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
-//var autoprefixer = require("gulp-autoprefixer");
+var autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("compile", () => {
   return (
@@ -15,7 +15,7 @@ gulp.task("compile", () => {
       )
   );
 });
-/*
+
 gulp.task("prefix", () =>
   gulp
     .src("css/*.scss")
@@ -25,7 +25,7 @@ gulp.task("prefix", () =>
       })
     )
     .pipe(gulp.dest("css"))
-);*/
+);
 
 gulp.task("watch", () => {
   return gulp.watch("css/*.scss", gulp.series("compile"));
