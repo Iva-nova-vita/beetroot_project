@@ -264,7 +264,7 @@ button[type="submit"] {
   grid-template-rows: 211px 211px;
   grid-gap: 12px;
   height: 434px;
-  button {
+  .bannersButton {
     
     background: #fcfcfc;
     border-radius: 35px;
@@ -290,7 +290,7 @@ button[type="submit"] {
   border-radius: 5px;
 }
 #firstSlidebannersSlider {
-  background: #c70015;
+  /*background: #c70015;
   position: relative;
   border-radius: 5px;
   height: 434px;
@@ -316,7 +316,7 @@ button[type="submit"] {
     bottom: 133px;
     left: 70px; 
   }
-  
+  */
 }
 #firstSmallBanner {
   grid-area: firstSmallBanner;
@@ -574,6 +574,8 @@ footer {
     }
   }
 
+  /*Arrows*/
+  
   .slick-prev
   {
       left: -305px;
