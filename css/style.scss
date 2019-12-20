@@ -5,6 +5,7 @@ body {
   color: black;
   button {
     cursor: pointer;
+    border: none;
   }
 }
 .container {
@@ -80,35 +81,36 @@ nav {
     color: white;
   }
 }
-#headerAside {
-  display: -ms-flexbox;
-  display: flex;
+#headerBottom {
   height: 170px;
-  -ms-flex-align: center;
-  align-items: center;
 }
-.logo {
-  img {
-    height: 75px;
-    width: 240px;
-  }
+.underline {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  border-bottom: 2px #c70015 solid;
 }
+.boxShadow {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 100%;
+  margin: 5px;
+    padding: 15px;
+}
+
 #callMe {
-  width: 68%;
+  width: 35%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
-  justify-content: flex-end;
+  justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
-  a,
-  p {
-    padding: 0 5% 0 5%;
-  }
+  
+  
 
   p {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 400;
     span {
       font-size: 16px;
       font-weight: 400;
@@ -122,20 +124,19 @@ nav {
   }
 }
 #inShoppingBag {
-  width: 25%;
+  width: 22%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
-  a {
-    padding: 0 10% 0 5%;
-  }
+  
 
   p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 30px;
+    
 
     span {
       font-size: 18px;
