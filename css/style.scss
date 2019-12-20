@@ -9,8 +9,8 @@ body {
   }
 }
 .container {
-  width: 70%;
-  padding: 0 15% 0 15%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 #menu {
@@ -18,11 +18,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0 15%;
+ 
 }
 nav {
   width: 60%;
@@ -82,7 +78,7 @@ nav {
   }
 }
 #headerBottom {
-  height: 170px;
+  height: 265px;
 }
 .underline {
   font-size: 18px;
@@ -145,7 +141,7 @@ nav {
   }
 }
 #search {
-  padding: 0 15%;
+  
   background-color: #e5e5e5;
   form {
     position: relative;
@@ -265,8 +261,9 @@ button[type="submit"] {
     "bannersSlider bannersSlider bannersSlider firstSmallBanner firstSmallBanner"
     " bannersSlider bannersSlider bannersSlider secondSmallBanner secondSmallBanner";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 5px;
-  height: 430px;
+  grid-template-rows: 211px 211px;
+  grid-gap: 12px;
+  height: 434px;
   button {
     
     background: #fcfcfc;
@@ -296,13 +293,13 @@ button[type="submit"] {
   background: #c70015;
   position: relative;
   border-radius: 5px;
-  height: 480px;
+  height: 434px;
   h1 {
     margin-top: 0;
     position: absolute;
 
-    left: 40px;
-    top: 40px;
+    left: 70px;
+    top: 60px;
 
     font-weight: bold;
     font-size: 36px;
@@ -316,14 +313,15 @@ button[type="submit"] {
   }
   button {
      position: absolute;
-    bottom: 200px;
-    left: 30px; 
+    bottom: 133px;
+    left: 70px; 
   }
   
 }
 #firstSmallBanner {
   grid-area: firstSmallBanner;
   border-radius: 5px;
+  height: 211px;
   background: #fcfcfc;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
@@ -349,6 +347,7 @@ button[type="submit"] {
 #secondSmallBanner {
   grid-area: secondSmallBanner;
   border-radius: 5px;
+  height: 211px;
   background: #fcfcfc;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
@@ -505,7 +504,7 @@ button[type="submit"] {
 }
 #emailNewsletter {
     background-color: #E5E5E5;
-    padding: 0 15%;
+    
     margin-top: 50px;
     .wrap {
         -ms-flex-pack: distribute;
