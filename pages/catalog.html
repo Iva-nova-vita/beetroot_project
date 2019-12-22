@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../slick-1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="menu" >
+        <div class="container wrap">
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li  class="activeNav"><a href="#">Каталог</a></li>
+            <li><a href="#">Клиентам</a></li>
+            <li><a href="#">VIN Запрос</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div id="accountMenu">
+          <div id="loginToAccount">
+            <a href="#">
+              <svg
+                width="14"
+                height="20"
+                viewbox="0 0 14 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.0103 10.4754C11.7357 10.1762 11.2685 10.1557 10.9693 10.4303C10.6701 10.7049 10.6496 11.1721 10.9242 11.4713C11.83 12.459 12.33 13.7418 12.33 15.082V18.25C12.33 18.3975 12.207 18.5205 12.0595 18.5205H1.93242C1.78487 18.5205 1.66192 18.3975 1.66192 18.25V15.082C1.66192 12.1393 4.05537 9.75 6.99389 9.75C9.68242 9.75 11.8709 7.56148 11.8709 4.87295C11.8709 2.18443 9.68651 0 6.99799 0C4.30946 0 2.12094 2.18852 2.12094 4.87705C2.12094 5.68033 2.32176 6.47951 2.69881 7.18443C2.89143 7.54508 3.33815 7.67623 3.69881 7.48361C4.05946 7.29098 4.19061 6.84426 3.99799 6.48361C3.73569 5.9918 3.59635 5.43852 3.59635 4.87705C3.59635 3 5.12094 1.47541 6.99799 1.47541C8.87504 1.47541 10.3996 3 10.3996 4.87705C10.3996 6.7541 8.87504 8.27869 6.99799 8.27869C3.24389 8.27869 0.190613 11.332 0.190613 15.0861V18.2541C0.190613 19.2172 0.9734 20 1.93651 20H12.0636C13.0267 20 13.8095 19.2172 13.8095 18.2541V15.0861C13.8095 13.373 13.1701 11.7377 12.0103 10.4754Z"
+                  fill="black"
+                />
+              </svg>
+              Войти</a
+            >
+          </div>
+          <div id="registration" class="accountMenuActive">
+            <a href="#">Регистрация</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="container">
+        <div id="headerBottom" class="wrap">
+          <div class="logo">
+            <a href="#"><img src="../images/logo.png" alt="logo"/></a>
+          </div>
+          <div id="location">
+            <a href="#"><img src="../images/geoRed.png" alt="geo"></a>  <a href="https://goo.gl/maps/mpmMWJYXLAgmaquP8" target="blank" class="underline">
+              Винница</a
+            >
+            
+          </div>
+
+          <div id="callMe">
+            <a href="#" class="boxShadow"><img src="../images/phone-call-1.png" alt="phone"/></a>
+            <p>
+              <span>Ежедневно с 9.00 до 20.00</span> <br />
+              +38 (068) 324 60 60 <br /><a href="#">Перезвоните мне</a>
+            </p>
+          </div>
+
+          <div id="inShoppingBag">
+            <a href="#" class="boxShadow"
+              ><img src="../images/shopping-bag-1.png" alt="shopping-bag" 
+            /><span id="qtyGoodsInBag">0</span></a>
+            <p>
+              В корзине<br />
+              <a href="#" class="underline">0 товара,</a> <span> 0 грн.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="search">
+        <form action="#" method="POST"  class="container">
+          <button id="btnCatalog">
+            Каталог
+            <a href="#"><img src="../images/speech-bubble-2 1.png" alt="menu"/></a>
+          </button>
+
+          <input
+            type="search"
+            placeholder="Поиск по названию"
+            id="searchByName"
+          />
+          <input
+            type="search"
+            placeholder="по номеру запчасти"
+            id="searchByNumber"
+          />
+          <button type="submit">
+            <img src="../images/Vector.png" alt="search" /> искать
+          </button>
+        </form>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Главная</a>
+            <img src="../images/VectorCrumbs.png" alt="next">
+            <span>Каталог</span>
+        </div>
+        <div class="categories">
+            <div class="categoriesItem">
+
+            <a href="#" class="wrap"
+              ><img src="../images/hiclipart1.png" alt="image" />
+              <h3>Шины</h3></a
+            >
+            <a href="#">Аграрные</a>
+            <a href="#">Грузовые</a>
+            <a href="#">Легковые</a>
+            <a href="#">Легкогрузовые</a>
+            <a href="#">Индустриальные</a>
+            
+        </div>
+        <div class="categoriesItem">
+            <a href="#" class="wrap"
+              ><img
+                src="../images/neoriginalnye-zapchasti-chevrolet2.png"
+                alt="image"
+              />
+              <h3>Автозапчасти</h3></a
+            >
+            <a href="#">Автобусы</a>
+            <a href="#">Грузовые автомобили</a>
+            <a href="#">Легковые автомобили</a>
+            <a href="#">Импорт</a>
+        </div>
+            <div class="categoriesItem">
+            <a href="#" class="wrap"
+              ><img
+                src="../images/kisspng-car-synthetic-oil-valvoline-3.png"
+                alt="image"
+              />
+              <h3>Масла и смазки</h3></a
+            >
+            <a href="#">Масла</a>
+            <a href="#">Смазки</a>
+        </div>
+
+            <div class="categoriesItem">
+            <a href="#" class="wrap"
+              ><img src="../images/zapchasti-dlya-to_4.png" alt="image" />
+              <h3>Автотовары</h3></a
+            >
+            <a href="#">Автокамеры</a>
+            <a href="#">Аккумуляторы</a>
+            <a href="#">Лампы и оптика</a>
+            <a href="#">Ободная лента</a>
+            <a href="#">Подшипники</a>
+            <a href="#">Ремни</a>
+        </div>
+            <div class="categoriesItem">
+            <a href="#" class="wrap"
+              ><img src="../images/Shell-oil5.png" alt="image" />
+              <h3>
+                Технические <br />
+                жидкости
+              </h3></a
+            >
+            <a href="#">Вода</a>
+            <a href="#">Жидкость бачка омывателя</a>
+            <a href="#">Охлаждающая жидкость</a>
+            <a href="#">Тормозная жидкость</a>
+        </div>
+            <div class="categoriesItem">
+            <a href="#" class="wrap"
+              ><img src="../images/yay6.png" alt="image" />
+              <h3>Аксессуары к авто</h3></a
+            >
+            <a href="#">Автокосметика</a>
+            <a href="#">Автомобильные пренадлежности</a>
+            <a href="#">Автохимия</a>
+            <a href="#">Герметики</a>
+            <a href="#">Инструменты</a>
+            
+        </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrap container">
+          <div class="logo">
+            <a href="#"><img src="../images/logo.png" alt="logo"/></a>
+          </div>
+          <div>
+            <h3>Навигация</h3>
+            <a href="#"><h4>Шины</h4></a>
+            <a href="#"><h4>Автозапчасти</h4></a>
+            <a href="#"><h4>Масла и смазки</h4></a>
+            <a href="#"><h4>Автотовары</h4></a>
+            <a href="#"><h4>Аксессуары</h4></a>
+            <a href="#"><h4>Технические жидкости</h4></a>
+          </div>
+  
+          <div>
+            <h3>Информаця</h3>
+            <a href="#"><h4>VIN - запрос</h4></a>
+            <a href="#"><h4>Клиентам</h4></a>
+            <a href="#"><h4>Оплата</h4></a>
+            <a href="#"><h4>Доставка</h4></a>
+            <a href="#"><h4>Гарантии</h4></a>
+            <a href="#"><h4>Новости</h4></a>
+          </div>
+  
+          <div>
+            <h3>Связаться с нами</h3>
+            <a href="tel:38(063) 324 60 60" target="blank"
+              ><img src="../images/phone-call_2.png" alt="phone">   38(063) 324 60 60</a
+            >     
+            <a href="tel:38(063) 324 60 60" target="blank"> <img src="../images/phone-call_2.png" alt="phone">   38(063) 324 60 60</a>
+            
+            <a href="https://goo.gl/maps/U8C5gK7Najyduqhi8" target="blank">
+              <img src="../images/placeholder2.png" alt="geo">   г.Винница, ул.Киевская 78</a
+            >
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

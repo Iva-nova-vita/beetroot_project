@@ -409,6 +409,21 @@ nav {
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center; }
+  #inShoppingBag > a {
+    position: relative; }
+  #inShoppingBag #qtyGoodsInBag {
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 28px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 100%;
+    color: white;
+    background-color: #c70015;
+    text-align: center;
+    line-height: 28px; }
   #inShoppingBag p {
     font-weight: 400;
     font-size: 30px; }
@@ -639,36 +654,37 @@ button[type="submit"] {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.04em; }
-  #searchByCategory ::nth-child(1) {
-    grid-area: category1; }
-  #searchByCategory ::nth-child(2) {
-    grid-area: category2; }
-  #searchByCategory ::nth-child(3) {
-    grid-area: category3; }
-  #searchByCategory ::nth-child(4) {
-    grid-area: category4; }
-  #searchByCategory ::nth-child(5) {
-    grid-area: category5; }
-  #searchByCategory ::nth-child(6) {
-    grid-area: category6; }
 
-#category {
+.categories {
   display: grid;
-  grid-template-areas: "category1 category2 category3" " category4 category5 category6";
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 40px; }
-  #category .wrap {
+  .categories .wrap {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-  #category a {
+  .categories .categoriesItem {
+    height: 390px; }
+    .categories .categoriesItem a[class="wrap"] ~ a {
+      opacity: 0.7;
+      color: #676363;
+      display: block;
+      width: fit-content;
+      margin: 20px 50px;
+      font-weight: 500; }
+    .categories .categoriesItem:hover a[class="wrap"] ~ a {
+      opacity: 1; }
+    .categories .categoriesItem a[class="wrap"] ~ a:hover {
+      color: #c70015; }
+  .categories a[class="wrap"] {
     background: #fcfcfc;
     border: 1px solid #e0e0e0;
-    border-radius: 5px; }
-    #category a:hover {
+    border-radius: 5px;
+    height: 126px; }
+    .categories a[class="wrap"]:hover {
       color: #c70015;
       box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05); }
-  #category h3 {
+  .categories h3 {
     font-weight: 500; }
 
 #popGoods {
@@ -813,3 +829,19 @@ footer {
     display: block; }
     footer a:hover {
       color: #c70015; }
+
+.breadcrumb {
+  padding: 60px 0 45px 15px; }
+  .breadcrumb img {
+    margin: 0 10px; }
+  .breadcrumb a {
+    color: #bdbdbd;
+    font-size: 16px; }
+    .breadcrumb a:hover {
+      color: #c70015; }
+
+span {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #676363; }
