@@ -1,10 +1,9 @@
 $(function() {
-    /**
-     * active link in nav
-     */
+  /**
+   * active link in nav
+   */
 
-
-    /*let pathname_url = window.location.pathname;
+  /*let pathname_url = window.location.pathname;
     let href_url = window.location.href;
 
     $("nav li").each(function () {
@@ -19,20 +18,19 @@ $(function() {
 
     });*/
 
+  $("#popGoodsSlider").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
 
-    $('#popGoodsSlider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-      });
-          
-      $('#bannersSlider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-       dots: true,
-       
-      });
+  $("#bannersSlider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+ 
+  });
+  
 });
-

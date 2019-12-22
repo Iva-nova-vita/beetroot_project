@@ -18,7 +18,6 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
- 
 }
 nav {
   width: 60%;
@@ -43,7 +42,6 @@ nav {
       }
       a {
         vertical-align: middle;
-        
       }
     }
   }
@@ -90,7 +88,7 @@ nav {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
   border-radius: 100%;
   margin: 5px;
-    padding: 15px;
+  padding: 15px;
 }
 
 #callMe {
@@ -101,8 +99,6 @@ nav {
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
-  
-  
 
   p {
     font-size: 30px;
@@ -127,12 +123,10 @@ nav {
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
-  
 
   p {
     font-weight: 400;
     font-size: 30px;
-    
 
     span {
       font-size: 18px;
@@ -141,7 +135,6 @@ nav {
   }
 }
 #search {
-  
   background-color: #e5e5e5;
   form {
     position: relative;
@@ -265,7 +258,6 @@ button[type="submit"] {
   grid-gap: 12px;
   height: 434px;
   .bannersButton {
-    
     background: #fcfcfc;
     border-radius: 35px;
 
@@ -288,9 +280,29 @@ button[type="submit"] {
 #bannersSlider {
   grid-area: bannersSlider;
   border-radius: 5px;
+  background-color: #c70015;
+  height: 434px;
+  /* Dots */
+
+.slick-dots {
+  position: absolute;
+  bottom: 30px;
+  left: -200px;
 }
-#firstSlidebannersSlider {
-  /*background: #c70015;
+
+.slick-dots li button:before {
+  font-size: 16px;
+  opacity: 0.25;
+  color: white;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white;
+}
+
+}
+/*#firstSlidebannersSlider {
+  background: #c70015;
   position: relative;
   border-radius: 5px;
   height: 434px;
@@ -316,8 +328,8 @@ button[type="submit"] {
     bottom: 133px;
     left: 70px; 
   }
-  */
-}
+  
+}*/
 #firstSmallBanner {
   grid-area: firstSmallBanner;
   border-radius: 5px;
@@ -381,9 +393,8 @@ button[type="submit"] {
 }
 #searchByCategory {
   margin-top: 100px;
-  
-  h2 {
 
+  h2 {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -420,10 +431,17 @@ button[type="submit"] {
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 40px;
-  & > a {
+  a {
     background: #fcfcfc;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
+    &:hover {
+      color: #c70015;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+    }
+  }
+  h3 {
+    font-weight: 500;
   }
 }
 #popGoods {
@@ -440,6 +458,57 @@ button[type="submit"] {
   width: 70%;
 
   padding: 40px 0 40px 0;
+  /*Arrows*/
+
+.slick-prev {
+  left: -305px;
+  top: 350px;
+}
+[dir="rtl"] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+.slick-prev:before {
+  content: url(../images/arrow1.png);
+ 
+}
+[dir="rtl"] .slick-prev:before {
+  content: url(../images/arrow1.png);
+  
+}
+
+.slick-next {
+  left: -215px;
+  top: 350px;
+}
+[dir="rtl"] .slick-next {
+  right: auto;
+  left: -25px;
+}
+.slick-next:before {
+  content: url(../images/arrow2.png);
+  
+}
+[dir="rtl"] .slick-next:before {
+  content: url(../images/arrow2.png);
+
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before
+{
+  opacity: 1;
+  content: url(../images/arrow3prev.png);
+ 
+}
+
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+    content: url(../images/arrow3.png);
+    
+}
+
 }
 .SlidePopGoodsSlider {
   position: relative;
@@ -503,113 +572,74 @@ button[type="submit"] {
   }
 }
 #emailNewsletter {
-    background-color: #E5E5E5;
-    
-    margin-top: 50px;
-    .wrap {
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
+  background-color: #e5e5e5;
+
+  margin-top: 50px;
+  .wrap {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  form {
+    position: relative;
+    span {
+      color: #828282;
     }
-    form {
-     position: relative;   
-     span {
-        color: #828282;
-     }
-    }
-    button {
-        right: 40px;
-    }
-    input {
-        height: 60px;
-        border: none;
-        width: 35%;
-  display: block;
-  margin-right: 30px;
-  border-radius: 35px;
-  padding: 0 3% 0 3%;
-  &::-webkit-input-placeholder {
-    color: #bdbdbd;
-    font-weight: 500;
   }
-  &::-moz-placeholder {
-    color: #bdbdbd;
-    font-weight: 500;
+  button {
+    right: 40px;
   }
-  &:-ms-input-placeholder {
-    color: #bdbdbd;
-    font-weight: 500;
-  }
-  &::-ms-input-placeholder {
-    color: #bdbdbd;
-    font-weight: 500;
-  }
-  &::placeholder {
-    color: #bdbdbd;
-    font-weight: 500;
-  }
-      }
-}
-footer {
-    padding-top: 50px;
-    background-color: #fcfcfc;
-    .logo {
-        padding-top: 50px;
-    }
-  .wrap{
-      -ms-flex-align: start;
-      align-items: flex-start;
-  }
-    h4, a {
-      font-size: 18px;
+  input {
+    height: 60px;
+    border: none;
+    width: 35%;
+    display: block;
+    margin-right: 30px;
+    border-radius: 35px;
+    padding: 0 3% 0 3%;
+    &::-webkit-input-placeholder {
+      color: #bdbdbd;
       font-weight: 500;
     }
-    a {
-        margin: 12px 0;
-        display: block;
-        &:hover {
-         
-    color: #c70015;
-  
-        }
+    &::-moz-placeholder {
+      color: #bdbdbd;
+      font-weight: 500;
+    }
+    &:-ms-input-placeholder {
+      color: #bdbdbd;
+      font-weight: 500;
+    }
+    &::-ms-input-placeholder {
+      color: #bdbdbd;
+      font-weight: 500;
+    }
+    &::placeholder {
+      color: #bdbdbd;
+      font-weight: 500;
     }
   }
+}
+footer {
+  padding-top: 50px;
+  background-color: #fcfcfc;
+  .logo {
+    padding-top: 50px;
+  }
+  .wrap {
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  h4,
+  a {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  a {
+    margin: 12px 0;
+    display: block;
+    &:hover {
+      color: #c70015;
+    }
+  }
+}
 
-  /*Arrows*/
-  
-  .slick-prev
-  {
-      left: -305px;
-      top: 350px;
-  }
-  [dir='rtl'] .slick-prev
-  {
-      right: -25px;
-      left: auto;
-  }
-  .slick-prev:before
-  {
-      content: url(../images/arrow1.png);
-  }
-  [dir='rtl'] .slick-prev:before
-  {
-      content: url(../images/arrow1.png);
-  }
-  
-  .slick-next
-  {
-      left: -215px;
-      top: 350px;
-  }
-  [dir='rtl'] .slick-next
-  {
-      right: auto;
-      left: -25px;
-  }
-  .slick-next:before
-  {
-      content: url(../images/arrow2.png);
-  }
-  [dir='rtl'] .slick-next:before
-  {
-      content: url(../images/arrow2.png);
-  }  
+
