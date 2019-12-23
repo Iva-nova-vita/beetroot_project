@@ -849,21 +849,27 @@ span {
 .sidebar {
   width: 17%;
   padding: 38px 0 0 24px;
+  background: #FCFCFC;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
   align-self: flex-start; }
   .sidebar a {
     display: block;
-    margin-top: 24px; }
+    margin: 24px 0; }
     .sidebar a:hover {
       color: #c70015; }
 
 .content {
   width: 83%;
-  padding: 18px 70px; }
+  padding: 18px 70px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.037);
+  border-radius: 5px;
+  margin-bottom: 50px; }
   .content h2 {
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 0.04em;
-    color: #C70015; }
+    color: #c70015; }
   .content h3 {
     text-align: center;
     font-weight: 500;

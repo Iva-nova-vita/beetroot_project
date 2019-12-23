@@ -672,27 +672,36 @@ span {
   letter-spacing: 0.02em;
 
   color: #676363;
-  
 }
 .sidebar {
   width: 17%;
   padding: 38px 0 0 24px;
+  background: #FCFCFC;
+
+
+box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+border-radius: 5px;
   a {
     display: block;
-    margin-top: 24px;
+    margin: 24px 0;
     &:hover {
       color: #c70015;
     }
-  }align-self: flex-start;
+  }
+  align-self: flex-start;
 }
 .content {
   width: 83%;
   padding: 18px 70px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.037);
+  border-radius: 5px;
+  margin-bottom: 50px;
+
   h2 {
     font-size: 30px;
     font-weight: 400;
-letter-spacing: 0.04em;
-color: #C70015;
+    letter-spacing: 0.04em;
+    color: #c70015;
   }
   h3 {
     text-align: center;
@@ -706,5 +715,4 @@ color: #C70015;
 .anchors {
   margin-left: 2px;
   color: #676363;
-  
 }
