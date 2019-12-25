@@ -91,22 +91,24 @@
         </div>
       </div>
       <div id="search">
-        <form action="#" method="POST"  class="container">
+        <form action="#" method="GET"  class="container">
           <button id="btnCatalog">
             Каталог
             <a href="#"><img src="../images/speech-bubble-2 1.png" alt="menu"/></a>
           </button>
 
           <input
-            type="search"
-            placeholder="Поиск по названию"
-            id="searchByName"
-          />
-          <input
-            type="search"
-            placeholder="по номеру запчасти"
-            id="searchByNumber"
-          />
+          type="search"
+          placeholder="Поиск по названию"
+          id="searchByName"
+          name="name"
+        />
+        <input
+          type="search"
+          placeholder="по номеру запчасти"
+          id="searchByNumber"
+          name="number"
+        />
           <button type="submit">
             <img src="../images/Vector.png" alt="search" /> искать
           </button>

@@ -104,7 +104,7 @@
         </div>
       </div>
       <div id="search">
-        <form action="#" method="POST" class="container">
+        <form action="#" method="GET" class="container">
           <button id="btnCatalog">
             Каталог
             <a href="#"
@@ -116,11 +116,13 @@
             type="search"
             placeholder="Поиск по названию"
             id="searchByName"
+            name="name"
           />
           <input
             type="search"
             placeholder="по номеру запчасти"
             id="searchByNumber"
+            name="number"
           />
           <button type="submit">
             <img src="../images/Vector.png" alt="search" /> искать
@@ -175,11 +177,11 @@
             <div class="wrap">
               <div>
                 <p>Имя и фамилия</p>
-                <input type="text" placeholder="Василий Иванов"/>
+                <input type="text" name="name" required placeholder="Василий Иванов"/>
                 <p>Мобильные телефон</p>
-                <input type="tel" placeholder="+38 (000) 000-00-00"/>
+                <input type="tel" name="tel" required placeholder="+38 (000) 000-00-00"/>
                 <p>Эл. почта</p>
-                <input type="email" placeholder="henry.frazier@example.com" />
+                <input  type="email" name="email" required placeholder="henry.frazier@example.com" />
               </div>
               <div>
                 <p>Ваше сообщение</p>
