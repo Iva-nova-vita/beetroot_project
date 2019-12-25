@@ -318,6 +318,9 @@ body {
   max-width: 1170px;
   margin: 0 auto; }
 
+.red {
+  color: #c70015; }
+
 #menu {
   background-color: #e5e5e5;
   font-weight: 500;
@@ -891,3 +894,37 @@ footer {
 .anchors {
   margin-left: 2px;
   color: #676363; }
+
+#feedback {
+  position: relative; }
+  #feedback h2 {
+    color: black; }
+  #feedback input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 15px; }
+    #feedback input::placeholder {
+      font-size: 13px;
+      line-height: 15px;
+      color: #999999; }
+  #feedback input[type="submit"] {
+    position: absolute;
+    right: 0;
+    border: 1px solid #C70015;
+    box-sizing: border-box;
+    border-radius: 35px;
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 500; }
+  #feedback textarea {
+    align-self: flex-end;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    border-radius: 5px; }

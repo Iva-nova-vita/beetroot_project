@@ -34,8 +34,8 @@
               <li><a href="catalog.html">Каталог</a></li>
               <li><a href="toClients.html">Клиентам</a></li>
               <li><a href="vinZapros.html">VIN Запрос</a></li>
-              <li class="activeNav"><a href="#">Новости</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li class="activeNav"><a href="#">Контакты</a></li>
             </ul>
           </nav>
           <div id="accountMenu">
@@ -138,47 +138,58 @@
           <a href="toClients.html#guarantees" class="anchors">Гарантии</a>
 
           <a href="vinZapros.html">VIN Запрос</a>
-          <p>Новости</p>
-          <a href="contacts.html">Контакты</a>
+
+          <a href="news.html">Новости</a>
+          <p>Контакты</p>
         </div>
 
         <div class="content-wrap">
-          <h2>Новости</h2>
-          
-            <a href="#">
-              <div class="content wrap news">
-                <img src="../images/photo1.jpg" alt="photo" />
-                <div>
-                <h3 class="textAlignLeft">Lorem ipsum dolor</h3>
-                <span>February 26, 2014 </span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
-                  aenean diam netus dignissim pharetra aliquam elit. Quisque
-                  enim tristique ut pulvinar est amet. Leo, tincidunt gravida
-                  feugiat libero, tellus enim consectetur id.
-                </p>
-              </div>
+          <h2>Контакты</h2>
+
+          <div class="wrap">
+            <div>
+              <p>
+                Время работы: <br /><br />
+                <span class="red">Пн-Пт</span> 8:00 до 18:00<br /><br />
+                <span class="red">Сб </span>9:00 до 14:00<br /><br />
+                <span class="red">Вс</span> Выходной<br /><br />
+                Свяжитесь с нами:<br /><br />
+                <span class="red">Запчасти:</span>+38(063) 324 60 60<br /><br />
+                <span class="red">Шины:</span>+38(063) 324 70 70
+              </p>
             </div>
-            </a>
-            <a href="#">
-              <div class="content  wrap news">
-                
-                <img src="../images/photo2.jpg" alt="photo" />
-                <div>
-                <h3 class="textAlignLeft">Lorem ipsum dolor</h3>
-                <span>February 26, 2014 </span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
-                  aenean diam netus dignissim pharetra aliquam elit. Quisque
-                  enim tristique ut pulvinar est amet. Leo, tincidunt gravida
-                  feugiat libero, tellus enim consectetur id.
-                </p>
-            </div>
-              </div>
-            </a>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1302.1247426335715!2d28.475719!3d49.252717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5ca7981bba05%3A0x30e913f208b9591a!2z0YPQuy4g0JrQuNC10LLRgdC60LDRjywgNzgsINCS0LjQvdC90LjRhtCwLCDQktC40L3QvdC40YbQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDIxMDAw!5e0!3m2!1sru!2sua!4v1577312200932!5m2!1sru!2sua"
+              width="550"
+              height="250"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+            ></iframe>
           </div>
+
+          <form id="feedback" action="#" method="GET">
+            <h2>Остались вопросы? Пишите</h2>
+
+            <div class="wrap">
+              <div>
+                <p>Имя и фамилия</p>
+                <input type="text" placeholder="Василий Иванов"/>
+                <p>Мобильные телефон</p>
+                <input type="tel" placeholder="+38 (000) 000-00-00"/>
+                <p>Эл. почта</p>
+                <input type="email" placeholder="henry.frazier@example.com" />
+              </div>
+              <div>
+                <p>Ваше сообщение</p>
+                <textarea name="message" cols="62" rows="10"></textarea>
+              </div>
+            </div>
+            <input type="submit">
+          </form>
         </div>
-      
+      </div>
     </main>
     <footer>
       <div class="wrap container">
