@@ -896,7 +896,8 @@ footer {
   color: #676363; }
 
 #feedback {
-  position: relative; }
+  position: relative;
+  padding-bottom: 100px; }
   #feedback h2 {
     color: black; }
   #feedback input {
@@ -913,7 +914,7 @@ footer {
   #feedback input[type="submit"] {
     position: absolute;
     right: 0;
-    border: 1px solid #C70015;
+    border: 1px solid #c70015;
     box-sizing: border-box;
     border-radius: 35px;
     width: 160px;

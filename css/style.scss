@@ -734,6 +734,7 @@ footer {
 }
 #feedback {
   position: relative;
+  padding-bottom: 100px;
   h2 {
     color: black;
   }
@@ -753,17 +754,16 @@ footer {
   input[type="submit"] {
     position: absolute;
     right: 0;
-    border: 1px solid #C70015;
-box-sizing: border-box;
-border-radius: 35px;
-width: 160px;
-height: 40px;
-background-color: transparent;
-font-size: 14px;
-padding: 0;
-cursor: pointer;
-font-weight: 500;
-    
+    border: 1px solid #c70015;
+    box-sizing: border-box;
+    border-radius: 35px;
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 500;
   }
   textarea {
     align-self: flex-end;
