@@ -72,10 +72,14 @@
           </div>
 
           <div id="callMe">
-            <a href="#" class="boxShadow"><img src="../images/phone-call-1.png" alt="phone"/></a>
+            <a href="#modalCallMe" rel="leanModal" class="boxShadow"
+              ><img src="../images/phone-call-1.png" alt="phone"
+            /></a>
             <p>
               <span>Ежедневно с 9.00 до 20.00</span> <br />
-              +38 (068) 324 60 60 <br /><a href="#">Перезвоните мне</a>
+              +38 (068) 324 60 60 <br /><a href="#modalCallMe" rel="leanModal"
+                >Перезвоните мне</a
+              >
             </p>
           </div>
 
@@ -239,5 +243,28 @@
           </div>
         </div>
       </footer>
+
+      <div id="modalCallMe" class="modal">
+        <img src="../images/VectorX.png" class="modal_close" />
+        <h3>Перезвонить вам ?</h3>
+        <p>
+          Оставьте ваш номер. <br />
+          Мы перезвоним вам в течении 5 минут!
+        </p>
+        <form action="#" method="GET">
+          <input name="name" type="text" placeholder="Имя" /> <br />
+          <input name="tel" type="tel" placeholder="+38(099)000-00-00" />
+          <button type="submit">
+            Заказать звонок
+          </button>
+        </form>
+      </div> 
+
+      <script src="../js/main.js"></script>
+      <script
+        type="text/javascript"
+        src="../slick-1.8.1/slick/slick.min.js"
+      ></script>
+      <script src="../js/jquery.leanModal.min.js"></script>
 </body>
 </html>
