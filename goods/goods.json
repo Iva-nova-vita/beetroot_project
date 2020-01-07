@@ -6,13 +6,63 @@
     "description": "Автомобильная шина для легкового автомобиля",
     "img": "../images/kisspng-car-bicycle.png"
   },
+  "12": {
+    "name": "Шина",
+    "brend": "Premiorri 42222",
+    "cost": 1720,
+    "description": "Автомобильная шина для легкового автомобиля",
+    "img": "../images/kisspng-car-bicycle.png"
+  },
+  "13": {
+    "name": "Шина",
+    "brend": "Premiorri 5636",
+    "cost": 1910,
+    "description": "Автомобильная шина для легкового автомобиля",
+    "img": "../images/kisspng-car-bicycle.png"
+  },
+  "14": {
+    "name": "Шина",
+    "brend": "Premiorri 96954",
+    "cost": 980,
+    "description": "Автомобильная шина для легкового автомобиля",
+    "img": "../images/kisspng-car-bicycle.png"
+  },
   "21": {
     "name": "Фара",
-    "brend": "Ferarri 425896",
+    "brend": "Ferarri 11125",
     "cost": 2520,
     "description": "Автомобильная фара для легкового автомобиля",
     "img": "../images/slide2pop.png"
   },
+  "22": {
+    "name": "Фара",
+    "brend": "Ferarri 8965874",
+    "cost": 1330,
+    "description": "Автомобильная фара для легкового автомобиля",
+    "img": "../images/slide2pop.png"
+  },
+  "23": {
+    "name": "Фара",
+    "brend": "Ferarri 425896",
+    "cost": 1420,
+    "description": "Автомобильная фара для легкового автомобиля",
+    "img": "../images/slide2pop.png"
+  },
+  "24": {
+    "name": "Фара",
+    "brend": "Ferarri 55636",
+    "cost": 2910,
+    "description": "Автомобильная фара для легкового автомобиля",
+    "img": "../images/slide2pop.png"
+  },
+  "25": {
+    "name": "Фара",
+    "brend": "Ferarri 454899",
+    "cost": 2590,
+    "description": "Автомобильная фара для легкового автомобиля",
+    "img": "../images/slide2pop.png"
+  },
+  
   "31": {
     "name": "Масло машинное",
     "brend": "Oil 54440",
@@ -20,10 +70,66 @@
     "description": "Автомобильная масло для легкового автомобиля",
     "img": "../images/slide3pop.png"
   },
+  "32": {
+    "name": "Масло машинное",
+    "brend": "Oil 74440",
+    "cost": 230,
+    "description": "Автомобильная масло для легкового автомобиля",
+    "img": "../images/slide3pop.png"
+  },
+  "33": {
+    "name": "Масло машинное",
+    "brend": "Oil 99655",
+    "cost": 910,
+    "description": "Автомобильная масло для легкового автомобиля",
+    "img": "../images/slide3pop.png"
+  },
+  "34": {
+    "name": "Масло машинное",
+    "brend": "Oil 6564",
+    "cost": 110,
+    "description": "Автомобильная масло для легкового автомобиля",
+    "img": "../images/slide3pop.png"
+  },
+  "35": {
+    "name": "Масло машинное",
+    "brend": "Oil 5464",
+    "cost": 270,
+    "description": "Автомобильная масло для легкового автомобиля",
+    "img": "../images/slide3pop.png"
+  },
   "41": {
     "name": "Свечи автомобильные",
     "brend": "Lada 558966",
     "cost": 840,
+    "description": "Автомобильная свеча",
+    "img": "../images/zapchasti-dlya-to_4.png"
+  },
+  "42": {
+    "name": "Свечи автомобильные",
+    "brend": "Lada 6654",
+    "cost": 740,
+    "description": "Автомобильная свеча",
+    "img": "../images/zapchasti-dlya-to_4.png"
+  },
+  "43": {
+    "name": "Свечи автомобильные",
+    "brend": "Lada 111166",
+    "cost": 890,
+    "description": "Автомобильная свеча",
+    "img": "../images/zapchasti-dlya-to_4.png"
+  },
+  "44": {
+    "name": "Свечи автомобильные",
+    "brend": "Lada 563256",
+    "cost": 780,
+    "description": "Автомобильная свеча",
+    "img": "../images/zapchasti-dlya-to_4.png"
+  },
+  "45": {
+    "name": "Свечи автомобильные",
+    "brend": "Lada 558776",
+    "cost": 900,
     "description": "Автомобильная свеча",
     "img": "../images/zapchasti-dlya-to_4.png"
   }

@@ -1,3 +1,4 @@
+let cart = {}; // корзина
 function init() {
   //вычитуем файл goods.json
   $.getJSON("../goods/goods.json", goodsOut);
@@ -5,7 +6,7 @@ function init() {
 
 function goodsOut(data) {
   // вывод товаров на страницу
-  console.log(data);
+  
   let out='';
   for (let key in data) {
      
@@ -16,11 +17,51 @@ function goodsOut(data) {
       out +=`<h3>${data[key].description}</h3>`;
       out +=`<div><span>${data[key].cost} грн</span>`;
       out +=`<button><img src="../images/heart.png" alt="heart" /></button>`;
-      out +='<button class="addToCart"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>';
+      out +=`<button class="addToCart" data-id="${key}"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>`;
       out +='</div></div>';
   }
-  $('.goods-out').html(out);
+  $('.goodsOut').html(out);
+  $('.addToCart').on('click', addToCart);
+  
 }
+function addToCart() {
+  //добавляем товар в корзину
+  let id = $(this).attr('data-id');
+  // console.log(id);
+  if (cart[id]==undefined) {
+      cart[id] = 1; //если в корзине нет товара - делаем равным 1
+  }
+  else {
+      cart[id]++; //если такой товар есть - увеличиваю на единицу
+  }
+  showMiniCart();
+  saveCart();
+}
+
+function saveCart() {
+  //сохраняю корзину в localStorage
+  localStorage.setItem('cart', JSON.stringify(cart)); //корзину в строку
+}
+
+function showMiniCart() {
+  //показываю мини корзину
+  let out=0;
+  for (let id in cart) {
+    
+      out +=cart[id];
+  }
+  $('.qtyGoodsInBag').html(out);
+}
+
+function loadCart() {
+  //проверяю есть ли в localStorage запись cart
+  if (localStorage.getItem('cart')) {
+      // если есть - расширфровываю и записываю в переменную cart
+      cart = JSON.parse(localStorage.getItem('cart'));
+      showMiniCart();
+  }
+}
+
 $(function() {
   /**
    * active link in nav
@@ -41,6 +82,8 @@ $(function() {
 
     });*/
     init();
+    showMiniCart();
+    loadCart();
 
   $("#popGoodsSlider").slick({
     infinite: true,

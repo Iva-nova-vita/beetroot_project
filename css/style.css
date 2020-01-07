@@ -736,7 +736,7 @@ button[type="submit"] {
   position: relative;
   height: 400px;
   width: 270px;
-  margin: 0 10px 0 10px;
+  margin: 10px;
   background: #f3f1f1;
   padding: 20px;
   border-radius: 5px; }
@@ -770,9 +770,6 @@ button[type="submit"] {
   border-radius: 35px;
   width: 65px;
   height: 35px; }
-
-.goods-out {
-  display: flex; }
 
 #lastNews {
   margin-top: 50px; }
