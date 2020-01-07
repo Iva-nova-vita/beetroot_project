@@ -524,22 +524,45 @@ button[type="submit"] {
     content: url(../images/arrow3.png);
   }
 }
-.SlidePopGoodsSlider {
+.productItem {
+  display: inline-block;
+  
   position: relative;
   height: 400px;
+  width: 270px;
   margin: 0 10px 0 10px;
   background: rgb(243, 241, 241);
-  padding: 20px 20px 0 20px;
-
+  padding: 20px;
   border-radius: 5px;
 
   img {
     margin: 0 auto;
+    display: block;
+   
+  }
+  p {
+    position: absolute;
+    top: 220px;
+  }
+  &>span {
+    position: absolute;
+    top: 265px;
+    color: red;
+    left: 20px;
+  }
+  h3 {
+    position: absolute;
+    top: 280px;
+    
   }
   div {
-    height: 200px;
+    height: 70px;
+    width: 200px;
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   button {
     border: none;
@@ -550,6 +573,9 @@ button[type="submit"] {
   border-radius: 35px;
   width: 65px;
   height: 35px;
+}
+.goods-out {
+  display: flex;
 }
 #lastNews {
   margin-top: 50px;

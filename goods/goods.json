@@ -1,0 +1,30 @@
+{
+  "11": {
+    "name": "Шина",
+    "brend": "Premiorri 428120",
+    "cost": 1520,
+    "description": "Автомобильная шина для легкового автомобиля",
+    "img": "../images/kisspng-car-bicycle.png"
+  },
+  "21": {
+    "name": "Фара",
+    "brend": "Ferarri 425896",
+    "cost": 2520,
+    "description": "Автомобильная фара для легкового автомобиля",
+    "img": "../images/slide2pop.png"
+  },
+  "31": {
+    "name": "Масло машинное",
+    "brend": "Oil 54440",
+    "cost": 210,
+    "description": "Автомобильная масло для легкового автомобиля",
+    "img": "../images/slide3pop.png"
+  },
+  "41": {
+    "name": "Свечи автомобильные",
+    "brend": "Lada 558966",
+    "cost": 840,
+    "description": "Автомобильная свеча",
+    "img": "../images/zapchasti-dlya-to_4.png"
+  }
+}
