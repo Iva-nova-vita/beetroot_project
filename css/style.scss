@@ -858,3 +858,22 @@ footer {
    cursor: pointer;
    
  }
+
+ #cart {
+   //height: 550px;
+   width: 350px;
+   padding: 35px;
+   p {
+     color: #828282;
+     font-size: 18px;
+
+letter-spacing: 0.04em;
+   }
+   button {
+    width: 200px;
+    height: 40px;
+    background: #c70015;
+    border-radius: 35px;
+    color: white;
+  }
+ }

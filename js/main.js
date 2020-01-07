@@ -2,6 +2,7 @@ let cart = {}; // корзина
 function init() {
   //вычитуем файл goods.json
   $.getJSON("../goods/goods.json", goodsOut);
+  
 }
 
 function goodsOut(data) {
@@ -11,7 +12,7 @@ function goodsOut(data) {
   for (let key in data) {
      
       out +='<div class="productItem">';
-      out +=`<img src="../images/${data[key].img}" alt="">`;
+      out +=`<img src="${data[key].img}" alt="">`;
       out +=`<p>${data[key].name}</p>`;
       out +=`<span>${data[key].brend}</span>`;
       out +=`<h3>${data[key].description}</h3>`;
@@ -43,14 +44,18 @@ function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart)); //корзину в строку
 }
 
-function showMiniCart() {
+function showMiniCart(data) {
   //показываю мини корзину
   let out=0;
+  let totalCost=0;
   for (let id in cart) {
     
       out +=cart[id];
+      
   }
   $('.qtyGoodsInBag').html(out);
+  $('.totalCost').html(totalCost);
+  
 }
 
 function loadCart() {
@@ -61,6 +66,71 @@ function loadCart() {
       showMiniCart();
   }
 }
+
+
+//--------------------------------------------------------
+
+
+
+$('a[href="#cart"]').on('click', showCart);
+
+
+
+
+function showCart() {
+  //вывод корзины
+  if (!isEmpty(cart)) {
+      $('#cart').html('Корзина пуста!');
+  }
+  else {
+      $.getJSON('../goods/goods.json', function (data) {
+          let goods = data;
+          let out = '';
+          for (let id in cart) {
+              out += `<button data-id="${id}" class="del-goods">x</button>`;
+              out += `<img src="${goods[id].img}">`;
+              out += ` ${goods[id].name  }`;
+              out += ` ${cart[id]  }`;
+              out += '<br>';
+          }
+          $('.main-cart').html(out);
+          $('.del-goods').on('click', delGoods);
+      });
+  }
+}
+
+function delGoods() {
+  //удаляем товар из корзины
+  let id = $(this).attr('data-id');
+  delete cart[id];
+  saveCart();
+  showCart();
+  showMiniCart();
+}
+
+function saveCart() {
+  //сохраняю корзину в localStorage
+  localStorage.setItem('cart', JSON.stringify(cart)); //корзину в строку
+}
+
+function isEmpty(object) {
+  //проверка корзины на пустоту
+  for (let key in object)
+  if (object.hasOwnProperty(key)) return true;
+  return false;
+}
+
+
+
+
+//------------------------------------------------------------
+
+
+
+
+
+
+
 
 $(function() {
   /**
@@ -88,8 +158,6 @@ $(function() {
   $("#popGoodsSlider").slick({
     infinite: true,
     slidesToShow: 3,
-    
-
     slidesToScroll: 1
   });
 
@@ -100,8 +168,7 @@ $(function() {
     arrows: false,
     dots: true,
     autoplay: true,
-
-  autoplaySpeed: 3000,
+    autoplaySpeed: 3000,
  
   });
 
