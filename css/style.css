@@ -339,10 +339,6 @@ nav {
     justify-content: space-between; }
     nav ul li {
       height: 40px; }
-      nav ul li:hover {
-        border-bottom: 2px solid #c70015; }
-        nav ul li:hover a {
-          color: #c70015; }
       nav ul li a {
         vertical-align: middle; }
 
@@ -405,7 +401,7 @@ nav {
       font-weight: 500; }
 
 #inShoppingBag {
-  width: 22%;
+  width: 25%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1000,15 +996,64 @@ footer {
   cursor: pointer; }
 
 #cart {
+  max-height: 520px;
   width: 350px;
-  padding: 35px; }
-  #cart p {
+  padding: 35px;
+  overflow: auto; }
+  #cart > p {
     color: #828282;
     font-size: 18px;
     letter-spacing: 0.04em; }
-  #cart button {
+  #cart .cost {
+    font-size: 14px;
+    color: black; }
+  #cart .checkout {
     width: 200px;
     height: 40px;
     background: #c70015;
     border-radius: 35px;
     color: white; }
+
+.totalCost {
+  font-size: 18px; }
+
+.productItemInCart {
+  display: flex;
+  margin-top: 25px;
+  height: 150px;
+  border-bottom: 1px lightgray solid; }
+
+.imgGoodsInCart {
+  width: 115px; }
+
+.description {
+  width: 60%;
+  text-align: start;
+  padding-left: 30px;
+  position: relative; }
+  .description p {
+    font-size: 10px;
+    color: black; }
+  .description span {
+    font-size: 13px; }
+  .description .delGoods {
+    background-image: url(../images/Group8.png);
+    background-size: cover;
+    border: none;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 10px; }
+  .description .plusGoods {
+    position: absolute;
+    right: 120px; }
+  .description .minusGoods {
+    position: absolute;
+    right: 105px; }
+  .description a {
+    display: block;
+    text-decoration: underline;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #828282; }

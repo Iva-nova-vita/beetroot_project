@@ -92,7 +92,7 @@
           </div>
 
           <div id="inShoppingBag">
-            <a href="#" class="boxShadow"
+            <a href="#cart" class="boxShadow" rel="leanModal"
               ><img
                 src="../images/shopping-bag-1.png"
                 alt="shopping-bag"
@@ -101,7 +101,7 @@
   
               <p>
                 В корзине<br />
-                <a href="#" class="underline qtyGoodsInBag">0 </a><a href="#" class="underline"> товара,</a> <span> 0 грн.</span>
+                <a href="#" class="underline qtyGoodsInBag">0 </a><a href="#cart" rel="leanModal" class="underline"> товара,</a> <span class="totalCost"></span><span> грн.</span>
             </p>
           </div>
         </div>
@@ -208,21 +208,45 @@ Vin-номер - это номер шасси (кузова, рамы) авто�
         </div>
       </div>
     </footer>
-    <div id="modalCallMe" class="modal">
-      <img src="../images/VectorX.png" class="modal_close" />
-      <h3>Перезвонить вам ?</h3>
-      <p>
-        Оставьте ваш номер. <br />
-        Мы перезвоним вам в течении 5 минут!
-      </p>
-      <form action="#" method="GET">
-        <input name="name" type="text" placeholder="Имя" /> <br />
-        <input name="tel" type="tel" placeholder="+38(099)000-00-00" />
-        <button type="submit">
-          Заказать звонок
-        </button>
-      </form>
-    </div> 
+    
+    <div id="allModalWindows">
+      <div id="modalCallMe" class="modal">
+        <img src="../images/VectorX.png" class="modal_close" />
+        <h3>Перезвонить вам ?</h3>
+        <p>
+          Оставьте ваш номер. <br />
+          Мы перезвоним вам в течении 5 минут!
+        </p>
+        <form action="#" method="GET">
+          <input name="name" type="text" placeholder="Имя" /> <br />
+          <input name="tel" type="tel" placeholder="+38(099)000-00-00" />
+          <button type="submit">
+            Заказать звонок
+          </button>
+        </form>
+      </div>
+    
+      <div id="cart" class="modal">
+        <div class="wrap">
+          <div>
+            <span class="qtyGoodsInBag underline"></span
+            ><span class="underline"> позиции</span>
+          </div>
+          <div>
+            <p>Сумма</p>
+            <span class="totalCost"></span>
+          </div>
+    
+          
+        </div>
+        <a href="#"
+            ><button class="checkout">
+              Оформить заказ
+            </button>
+          </a>
+          <div class="mainCart"></div>
+      </div>
+    </div>
 
     <script src="../js/main.js"></script>
     <script
