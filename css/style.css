@@ -518,8 +518,9 @@ button[type="submit"] {
   font-weight: 500;
   font-size: 16px;
   width: 17%;
-  height: 60px;
-  color: #fcfcfc; }
+  height: 60px; }
+  #btnCatalog a {
+    color: #fcfcfc; }
   #btnCatalog img {
     padding-top: 5px; }
 
@@ -528,9 +529,15 @@ button[type="submit"] {
   display: grid;
   grid-template-areas: "bannersSlider bannersSlider bannersSlider firstSmallBanner firstSmallBanner" " bannersSlider bannersSlider bannersSlider secondSmallBanner secondSmallBanner";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 211px 211px;
+  grid-template-rows: 186px 186px;
   grid-gap: 12px;
-  height: 434px; }
+  height: 384px; }
+  #banners .slick-slide {
+    border-radius: 5px; }
+    #banners .slick-slide img {
+      height: 100%;
+      overflow: hidden;
+      max-width: 100%; }
   #banners .bannersButton {
     background: #fcfcfc;
     border-radius: 35px;
@@ -550,11 +557,11 @@ button[type="submit"] {
   grid-area: bannersSlider;
   border-radius: 5px;
   background-color: #c70015;
-  height: 434px;
+  height: 384px;
   /* Dots */ }
   #bannersSlider .slick-dots {
     position: absolute;
-    bottom: 30px;
+    bottom: 60px;
     left: -200px; }
   #bannersSlider .slick-dots li button:before {
     font-size: 16px;
@@ -568,7 +575,7 @@ button[type="submit"] {
   background: #c70015;
   position: relative;
   border-radius: 5px;
-  height: 434px;
+  height: 384px;
   h1 {
     margin-top: 0;
     position: absolute;
@@ -596,7 +603,7 @@ button[type="submit"] {
 #firstSmallBanner {
   grid-area: firstSmallBanner;
   border-radius: 5px;
-  height: 211px;
+  height: 186px;
   background: #fcfcfc;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
@@ -606,7 +613,11 @@ button[type="submit"] {
     left: 30px;
     top: 10px;
     font-weight: 500;
-    font-size: 24px; }
+    font-size: 24px;
+    z-index: 20;
+    background-color: #fcfcfc;
+    border-radius: 35px;
+    padding: 0 15px; }
   #firstSmallBanner > img {
     position: absolute;
     right: 0;
@@ -619,7 +630,7 @@ button[type="submit"] {
 #secondSmallBanner {
   grid-area: secondSmallBanner;
   border-radius: 5px;
-  height: 211px;
+  height: 186px;
   background: #fcfcfc;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
@@ -629,7 +640,12 @@ button[type="submit"] {
     right: 30px;
     top: 10px;
     font-weight: 500;
-    font-size: 24px; }
+    font-size: 24px;
+    text-align: right;
+    z-index: 20;
+    background-color: #fcfcfc;
+    border-radius: 35px;
+    padding: 0 15px; }
   #secondSmallBanner > img {
     position: absolute;
     left: 0;
@@ -654,14 +670,25 @@ button[type="submit"] {
     font-weight: 400;
     letter-spacing: 0.04em; }
 
+#categories a[class="wrap"] {
+  background: #fcfcfc;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  height: 126px; }
+  #categories a[class="wrap"]:hover {
+    color: #c70015;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05); }
+
+#categories .wrap {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
 .categories {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 40px; }
-  .categories .wrap {
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
+  grid-column-gap: 40px;
+  grid-row-gap: 5px; }
   .categories .categoriesItem {
     height: 390px; }
     .categories .categoriesItem a[class="wrap"] ~ a {
@@ -675,14 +702,6 @@ button[type="submit"] {
       opacity: 1; }
     .categories .categoriesItem a[class="wrap"] ~ a:hover {
       color: #c70015; }
-  .categories a[class="wrap"] {
-    background: #fcfcfc;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    height: 126px; }
-    .categories a[class="wrap"]:hover {
-      color: #c70015;
-      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05); }
   .categories h3 {
     font-weight: 500; }
 
@@ -772,19 +791,22 @@ button[type="submit"] {
   #lastNews button {
     width: 200px;
     height: 60px;
-    background: #c70015;
+    border: 1px solid #c70015;
     border-radius: 35px;
-    color: white; }
+    color: #020202;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px; }
+  #lastNews h2 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    margin-bottom: 280px; }
   #lastNews .news {
     width: 355px; }
 
 .news img {
   margin-right: 50px; }
-
-.news h2 {
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 0.04em; }
 
 .news h3 {
   font-weight: 500;
@@ -977,6 +999,19 @@ footer {
     width: 250px;
     height: 40px; }
 
+#catalog_modal {
+  width: 950px; }
+  #catalog_modal .categoriesItem {
+    height: 265px;
+    text-align: start; }
+  #catalog_modal h3 {
+    margin: 20px 0 0 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #C70015; }
+  #catalog_modal a {
+    font-size: 14px; }
+
 .modal {
   display: none;
   background: #fff;
@@ -997,8 +1032,8 @@ footer {
 
 #cart {
   max-height: 520px;
-  width: 350px;
-  padding: 35px;
+  width: 280px;
+  padding: 30px;
   overflow: auto; }
   #cart > p {
     color: #828282;
@@ -1013,6 +1048,11 @@ footer {
     background: #c70015;
     border-radius: 35px;
     color: white; }
+
+div#cart.modal {
+  position: absolute !important;
+  top: 225px !important;
+  left: 82% !important; }
 
 .totalCost {
   font-size: 18px; }

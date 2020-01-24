@@ -93,15 +93,17 @@
 
           <div id="inShoppingBag">
             <a href="#cart" class="boxShadow" rel="leanModal"
-              ><img
-                src="../images/shopping-bag-1.png"
-                alt="shopping-bag"
-              /><span id="qtyGoodsInBag" class="qtyGoodsInBag"></span></a
-            >
+              ><img src="../images/shopping-bag-1.png" alt="shopping-bag"/><span
+                id="qtyGoodsInBag"
+                class="qtyGoodsInBag"
+              ></span
+            ></a>
 
             <p>
               В корзине<br />
-              <a href="#" class="underline qtyGoodsInBag">0 </a><a href="#cart"  rel="leanModal" class="underline"> товара,</a> <span class="totalCost"></span><span> грн.</span>
+              <a href="#" class="underline qtyGoodsInBag">0 </a
+              ><a href="#cart" rel="leanModal" class="underline"> товара,</a>
+              <span class="totalCost"></span><span> грн.</span>
             </p>
           </div>
         </div>
@@ -109,8 +111,9 @@
       <div id="search">
         <form action="#" method="GET" class="container">
           <button id="btnCatalog">
-            Каталог
-            <a href="#"
+            <a href="catalog.html"> Каталог</a>
+
+            <a href="#catalog_modal" rel="leanModal"
               ><img src="../images/speech-bubble-2 1.png" alt="menu"
             /></a>
           </button>
@@ -158,8 +161,8 @@
           </div>
           <div id="firstSmallBanner">
             <h2>
-              Lorem ipsum dolor <br />
-              sit amet
+              Топ продаж <br />
+              2019
             </h2>
             <img
               src="../images/rotinger-brake-discs-drilled-grooved_31_1.png"
@@ -174,8 +177,8 @@
           </div>
           <div id="secondSmallBanner">
             <h2>
-              Lorem ipsum dolor <br />
-              sit amet
+              Скидки на все <br />
+              шины
             </h2>
             <img
               src="../images/kisspng-car-nexen-tire-firestone-tire-and-rubber-company-v-kumho-tire-5b0d2700c8b538 1.png"
@@ -235,16 +238,21 @@
       <div id="popGoods">
         <div class="container">
           <div class="wrap">
-            <div id="popGoodsSliderArrows"><h2>Популярные товары</h2></div>
+            <div id="popGoodsSliderArrows">
+              <h2>
+                Популярные <br />
+                товары
+              </h2>
+            </div>
             <div id="popGoodsSlider">
               <div class="productItem">
                 <a href="#">
-                <img src="../images/kisspng-car-bicycle.png" alt="goods" />
-               
+                  <img src="../images/kisspng-car-bicycle.png" alt="goods" />
+
                   <p>Lorem ipsum</p>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
                 </a>
-                  <div>
+                <div>
                   <span>982 грн</span>
                   <button><img src="../images/heart.png" alt="heart" /></button>
                   <button class="addToCart">
@@ -255,12 +263,12 @@
 
               <div class="productItem">
                 <a href="#">
-                <img src="../images/slide2pop.png" alt="goods" />
-                
+                  <img src="../images/slide2pop.png" alt="goods" />
+
                   <p>Lorem ipsum</p>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
                 </a>
-                  <div>
+                <div>
                   <span>982 грн</span>
                   <button><img src="../images/heart.png" alt="heart" /></button>
                   <button class="addToCart">
@@ -271,12 +279,12 @@
 
               <div class="productItem">
                 <a href="#">
-                <img src="../images/slide3pop.png" alt="goods" />
-                
+                  <img src="../images/slide3pop.png" alt="goods" />
+
                   <p>Lorem ipsum</p>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
                 </a>
-                  <div>
+                <div>
                   <span>982 грн</span>
                   <button><img src="../images/heart.png" alt="heart" /></button>
                   <button class="addToCart">
@@ -287,11 +295,11 @@
 
               <div class="productItem">
                 <a href="#">
-                <img src="../images/zapchasti-dlya-to_4.png" alt="goods" />
-                
+                  <img src="../images/zapchasti-dlya-to_4.png" alt="goods" />
+
                   <p>Slide4</p>
                   <h3>
-                    Lorem ipsum 
+                    Lorem ipsum
                   </h3>
                 </a>
                 <div>
@@ -314,7 +322,7 @@
                 Последние <br />
                 новости
               </h2>
-              <a href="news.html"><button>Перейти</button></a>
+              <a href="news.html"><button>Все новости</button></a>
             </div>
             <a href="news.html">
               <div class="news">
@@ -425,7 +433,7 @@
           </button>
         </form>
       </div>
-    
+
       <div id="cart" class="modal">
         <div class="wrap">
           <div>
@@ -436,15 +444,66 @@
             <p>Сумма</p>
             <span class="totalCost"></span>
           </div>
-    
-          
         </div>
         <a href="#"
-            ><button class="checkout">
-              Оформить заказ
-            </button>
-          </a>
-          <div class="mainCart"></div>
+          ><button class="checkout">
+            Оформить заказ
+          </button>
+        </a>
+        <div class="mainCart"></div>
+      </div>
+
+      <div id="catalog_modal" class="modal">
+        <div class="categories">
+          <div class="categoriesItem">
+            <a href="category1.html" class="wrap"> <h3>Шины</h3></a>
+            <a href="#">Аграрные</a>
+            <a href="#">Грузовые</a>
+            <a href="#">Легковые</a>
+            <a href="#">Легкогрузовые</a>
+            <a href="#">Индустриальные</a>
+          </div>
+          <div class="categoriesItem">
+            <a href="#" class="wrap"> <h3>Автозапчасти</h3></a>
+            <a href="#">Автобусы</a>
+            <a href="#">Грузовые автомобили</a>
+            <a href="#">Легковые автомобили</a>
+            <a href="#">Импорт</a>
+          </div>
+          <div class="categoriesItem">
+            <a href="#" class="wrap"> <h3>Масла и смазки</h3></a>
+            <a href="#">Масла</a>
+            <a href="#">Смазки</a>
+          </div>
+
+          <div class="categoriesItem">
+            <a href="#" class="wrap"> <h3>Автотовары</h3></a>
+            <a href="#">Автокамеры</a>
+            <a href="#">Аккумуляторы</a>
+            <a href="#">Лампы и оптика</a>
+            <a href="#">Ободная лента</a>
+            <a href="#">Подшипники</a>
+            <a href="#">Ремни</a>
+          </div>
+          <div class="categoriesItem">
+            <a href="#" class="wrap">
+              <h3>
+                Технические жидкости
+              </h3></a>
+            <a href="#">Вода</a>
+            <a href="#">Жидкость бачка омывателя</a>
+            <a href="#">Охлаждающая жидкость</a>
+            <a href="#">Тормозная жидкость</a>
+          </div>
+          <div class="categoriesItem">
+            <a href="#" class="wrap"> <h3>Аксессуары к авто</h3></a>
+            <a href="#">Автокосметика</a>
+            <a href="#">Автомобильные пренадлежности</a>
+            <a href="#">Автохимия</a>
+            <a href="#">Герметики</a>
+            <a href="#">Инструменты</a>
+          </div>
+        </div>
       </div>
     </div>
 
