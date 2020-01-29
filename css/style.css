@@ -317,6 +317,9 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto; }
+  @media screen and (max-width: 1170px) {
+    .container {
+      padding: 0 22px; } }
 
 .red {
   color: #c70015; }
@@ -337,8 +340,21 @@ nav {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media screen and (max-width: 960px) {
+      nav ul {
+        margin: 8px; } }
     nav ul li {
       height: 40px; }
+      @media screen and (max-width: 960px) {
+        nav ul li {
+          display: none; } }
+      nav ul li:last-of-type {
+        display: none; }
+        @media screen and (max-width: 960px) {
+          nav ul li:last-of-type {
+            display: inline; }
+            nav ul li:last-of-type img {
+              height: 45px; } }
       nav ul li a {
         vertical-align: middle; }
 
@@ -354,11 +370,39 @@ nav {
   justify-content: space-between;
   width: 25%;
   height: 60px; }
+  @media screen and (max-width: 960px) {
+    #accountMenu {
+      justify-content: flex-end; } }
   #accountMenu div {
     height: 60px;
-    width: 50%;
     text-align: center;
     line-height: 60px; }
+
+#loginToAccount {
+  width: 50%; }
+  #loginToAccount img {
+    height: 22px; }
+  @media screen and (max-width: 960px) {
+    #loginToAccount {
+      width: 40px; }
+      #loginToAccount span {
+        display: none; } }
+
+#registration {
+  width: 50%; }
+  @media screen and (max-width: 960px) {
+    #registration {
+      display: none; } }
+
+#adaptiveCart {
+  display: none;
+  width: 40px;
+  position: relative; }
+  @media screen and (max-width: 960px) {
+    #adaptiveCart {
+      display: block; } }
+  #adaptiveCart img {
+    height: 22px; }
 
 .accountMenuActive {
   background-color: #c70015; }
@@ -367,6 +411,9 @@ nav {
 
 #headerBottom {
   height: 265px; }
+  @media screen and (max-width: 960px) {
+    #headerBottom {
+      display: none; } }
 
 .underline {
   font-size: 18px;
@@ -391,6 +438,12 @@ nav {
   #callMe p {
     font-size: 30px;
     font-weight: 400; }
+    @media screen and (min-width: 981px) and (max-width: 1140px) {
+      #callMe p {
+        font-size: 26px; } }
+    @media screen and (min-width: 541px) and (max-width: 980px) {
+      #callMe p {
+        font-size: 22px; } }
     #callMe p span {
       font-size: 16px;
       font-weight: 400;
@@ -408,30 +461,57 @@ nav {
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (min-width: 541px) and (max-width: 1140px) {
+    #inShoppingBag a {
+      font-size: 16px; } }
   #inShoppingBag > a {
     position: relative; }
-  #inShoppingBag #qtyGoodsInBag {
-    position: absolute;
-    top: -10px;
-    left: 50px;
-    width: 28px;
-    height: 28px;
-    font-weight: 500;
-    font-size: 12px;
-    border-radius: 100%;
-    color: white;
-    background-color: #c70015;
-    text-align: center;
-    line-height: 28px; }
   #inShoppingBag p {
     font-weight: 400;
     font-size: 30px; }
+    @media screen and (min-width: 541px) and (max-width: 1140px) {
+      #inShoppingBag p {
+        font-size: 20px; } }
     #inShoppingBag p span {
       font-size: 18px;
       font-weight: 500; }
+      @media screen and (min-width: 541px) and (max-width: 1140px) {
+        #inShoppingBag p span {
+          font-size: 16px; } }
+
+#qtyGoodsInBag {
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  width: 28px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 100%;
+  color: white;
+  background-color: #c70015;
+  text-align: center;
+  line-height: 28px; }
+
+#qtyGoodsInBagAdaptive {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 100%;
+  color: white;
+  background-color: #c70015;
+  text-align: center;
+  line-height: 20px; }
 
 #search {
   background-color: #e5e5e5; }
+  @media screen and (max-width: 960px) {
+    #search {
+      background-color: transparent; } }
   #search form {
     position: relative;
     height: 100px;
@@ -441,13 +521,31 @@ nav {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    @media screen and (max-width: 960px) {
+      #search form {
+        height: 40px;
+        margin-bottom: 25px;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05); }
+        #search form input {
+          height: 40px; } }
     #search form input {
       height: 60px;
       border: none; }
+      @media screen and (max-width: 960px) {
+        #search form input {
+          height: 40px; } }
 
 #searchByName {
   width: 60%;
   padding: 0 0 0 18%; }
+  @media screen and (min-width: 961px) and (max-width: 1140px) {
+    #searchByName {
+      padding: 0 0 0 8%; }
+      #searchByName {
+        width: 35%; } }
+  @media screen and (max-width: 960px) {
+    #searchByName {
+      width: 100%; } }
   #searchByName::-webkit-input-placeholder {
     color: #bdbdbd;
     font-weight: 500; }
@@ -463,12 +561,18 @@ nav {
   #searchByName::placeholder {
     color: #bdbdbd;
     font-weight: 500; }
+    @media screen and (max-width: 960px) {
+      #searchByName::placeholder {
+        font-size: 1px; } }
 
 #searchByNumber {
   width: 35%;
   display: block;
   margin-left: 5px;
   padding: 0 3% 0 3%; }
+  @media screen and (max-width: 960px) {
+    #searchByNumber {
+      width: 1%; } }
   #searchByNumber::-webkit-input-placeholder {
     color: #bdbdbd;
     font-weight: 500; }
@@ -502,6 +606,16 @@ button[type="submit"] {
   color: #fcfcfc;
   width: 190px;
   height: 60px; }
+  @media screen and (max-width: 1170px) {
+    button[type="submit"] {
+      right: 22px; } }
+  @media screen and (max-width: 960px) {
+    button[type="submit"] {
+      width: 116px;
+      height: 40px;
+      font-size: 14px; }
+      button[type="submit"] img {
+        width: 20px; } }
 
 #btnCatalog {
   position: absolute;
@@ -519,6 +633,9 @@ button[type="submit"] {
   font-size: 16px;
   width: 17%;
   height: 60px; }
+  @media screen and (max-width: 1170px) {
+    #btnCatalog {
+      left: 22px; } }
   #btnCatalog a {
     color: #fcfcfc; }
   #btnCatalog img {
@@ -530,16 +647,32 @@ button[type="submit"] {
   grid-template-areas: "bannersSlider bannersSlider bannersSlider firstSmallBanner firstSmallBanner" " bannersSlider bannersSlider bannersSlider secondSmallBanner secondSmallBanner";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 186px 186px;
-  grid-gap: 12px;
-  height: 384px; }
+  grid-gap: 12px; }
+  @media screen and (min-width: 961px) and (max-width: 1140px) {
+    #banners {
+      grid-template-columns: 1fr 2fr 1fr 2fr 1fr; } }
+  @media screen and (max-width: 960px) {
+    #banners {
+      width: 80%;
+      margin: 0 auto;
+      grid-template-areas: "bannersSlider bannersSlider bannersSlider bannersSlider bannersSlider" "firstSmallBanner firstSmallBanner firstSmallBanner firstSmallBanner firstSmallBanner" "secondSmallBanner secondSmallBanner secondSmallBanner secondSmallBanner secondSmallBanner";
+      grid-template-columns: 5fr;
+      grid-template-rows: auto 156px 156px;
+      grid-gap: 12px; } }
+  @media screen and (max-width: 541px) {
+    #banners {
+      width: 100%; } }
   #banners .slick-slide {
     border-radius: 5px; }
     #banners .slick-slide img {
       height: 100%;
       overflow: hidden;
       max-width: 100%; }
+      @media screen and (max-width: 960px) {
+        #banners .slick-slide img {
+          width: 100%; } }
   #banners .bannersButton {
-    background: #fcfcfc;
+    background: transparent;
     border-radius: 35px;
     border: none;
     display: -ms-flexbox;
@@ -559,47 +692,24 @@ button[type="submit"] {
   background-color: #c70015;
   height: 384px;
   /* Dots */ }
+  @media screen and (max-width: 960px) {
+    #bannersSlider {
+      height: auto; } }
   #bannersSlider .slick-dots {
     position: absolute;
-    bottom: 60px;
-    left: -200px; }
+    bottom: 10%;
+    left: -27%; }
   #bannersSlider .slick-dots li button:before {
     font-size: 16px;
     opacity: 0.25;
     color: white; }
+    @media screen and (max-width: 460px) {
+      #bannersSlider .slick-dots li button:before {
+        font-size: 10px; } }
   #bannersSlider .slick-dots li.slick-active button:before {
     opacity: 0.75;
     color: white; }
 
-/*#firstSlidebannersSlider {
-  background: #c70015;
-  position: relative;
-  border-radius: 5px;
-  height: 384px;
-  h1 {
-    margin-top: 0;
-    position: absolute;
-
-    left: 70px;
-    top: 60px;
-
-    font-weight: bold;
-    font-size: 36px;
-
-    color: #fcfcfc;
-  }
-  & > img {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-  }
-  button {
-     position: absolute;
-    bottom: 133px;
-    left: 70px; 
-  }
-  
-}*/
 #firstSmallBanner {
   grid-area: firstSmallBanner;
   border-radius: 5px;
@@ -608,6 +718,9 @@ button[type="submit"] {
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   position: relative; }
+  @media screen and (max-width: 960px) {
+    #firstSmallBanner {
+      height: 156px; } }
   #firstSmallBanner h2 {
     position: absolute;
     left: 30px;
@@ -618,14 +731,25 @@ button[type="submit"] {
     background-color: #fcfcfc;
     border-radius: 35px;
     padding: 0 15px; }
+    @media screen and (max-width: 1115px) {
+      #firstSmallBanner h2 {
+        font-size: 18px;
+        left: 5px; } }
   #firstSmallBanner > img {
     position: absolute;
     right: 0;
     top: 0; }
+    @media screen and (max-width: 460px) {
+      #firstSmallBanner > img {
+        width: 120px; } }
   #firstSmallBanner button {
     position: absolute;
     bottom: 30px;
     left: 30px; }
+    @media screen and (max-width: 1115px) {
+      #firstSmallBanner button {
+        bottom: 15px;
+        left: 0px; } }
 
 #secondSmallBanner {
   grid-area: secondSmallBanner;
@@ -635,6 +759,9 @@ button[type="submit"] {
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   position: relative; }
+  @media screen and (max-width: 960px) {
+    #secondSmallBanner {
+      height: 156px; } }
   #secondSmallBanner h2 {
     position: absolute;
     right: 30px;
@@ -646,14 +773,25 @@ button[type="submit"] {
     background-color: #fcfcfc;
     border-radius: 35px;
     padding: 0 15px; }
+    @media screen and (max-width: 1115px) {
+      #secondSmallBanner h2 {
+        font-size: 18px;
+        right: 5px; } }
   #secondSmallBanner > img {
     position: absolute;
     left: 0;
     bottom: 0; }
+    @media screen and (max-width: 460px) {
+      #secondSmallBanner > img {
+        width: 140px; } }
   #secondSmallBanner button {
     position: absolute;
     bottom: 30px;
     right: 15px; }
+    @media screen and (max-width: 1115px) {
+      #secondSmallBanner button {
+        bottom: 20px;
+        right: -10px; } }
 
 .wrap {
   display: -ms-flexbox;
@@ -664,11 +802,22 @@ button[type="submit"] {
   align-items: center; }
 
 #searchByCategory {
-  margin-top: 100px; }
+  margin-top: 70px; }
+  @media screen and (max-width: 960px) {
+    #searchByCategory {
+      margin-top: 470px; } }
+  #searchByCategory .wrap {
+    justify-items: stretch; }
   #searchByCategory h2 {
     font-size: 22px;
     font-weight: 400;
-    letter-spacing: 0.04em; }
+    letter-spacing: 0.04em;
+    margin-bottom: 70px;
+    text-align: center; }
+  #searchByCategory .line {
+    border-top: 1px #e0e0e0 solid;
+    width: 37%;
+    height: 50px; }
 
 #categories a[class="wrap"] {
   background: #fcfcfc;
@@ -682,6 +831,16 @@ button[type="submit"] {
 #categories .wrap {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
+
+#categoriesMainPage a[class="wrap"] {
+  background: #fcfcfc;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  height: 126px;
+  justify-content: space-around; }
+  #categoriesMainPage a[class="wrap"]:hover {
+    color: #c70015;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05); }
 
 .categories {
   display: grid;
@@ -702,6 +861,20 @@ button[type="submit"] {
       opacity: 1; }
     .categories .categoriesItem a[class="wrap"] ~ a:hover {
       color: #c70015; }
+  @media screen and (min-width: 541px) and (max-width: 960px) {
+    .categories {
+      grid-template-columns: 2fr 2fr;
+      grid-template-rows: 1fr 1fr 1fr; }
+    .categories h3 {
+      font-weight: 300;
+      font-size: 16px; } }
+  @media screen and (max-width: 540px) {
+    .categories {
+      grid-template-columns: 2fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; }
+    .categories h3 {
+      font-weight: 300;
+      font-size: 14px; } }
   .categories h3 {
     font-weight: 500; }
 
@@ -777,6 +950,9 @@ button[type="submit"] {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (max-width: 1140px) {
+      .productItem div {
+        width: 170px; } }
   .productItem button {
     border: none; }
 
@@ -801,29 +977,36 @@ button[type="submit"] {
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 0.04em;
-    margin-bottom: 280px; }
-  #lastNews .news {
-    width: 355px; }
+    margin-bottom: 250px; }
+  #lastNews .wrap > a {
+    width: 35%; }
 
-.news img {
-  margin-right: 50px; }
+#news1 .newsImg {
+  background-image: url("../images/photo1.jpg"); }
 
-.news h3 {
-  font-weight: 500;
-  font-size: 30px;
-  letter-spacing: -0.04em;
-  color: #c70015; }
+#news2 .newsImg {
+  background-image: url("../images/photo2.jpg"); }
 
-.news h3[class="textAlignLeft"] {
-  text-align: left; }
+.news {
+  width: 95%; }
+  .news h3 {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -0.04em;
+    color: #c70015; }
+  .news h3[class="textAlignLeft"] {
+    text-align: left; }
+  .news span {
+    font-size: 16px;
+    letter-spacing: 0.04em; }
+  .news p {
+    font-size: 18px;
+    color: #828282; }
 
-.news span {
-  font-size: 16px;
-  letter-spacing: 0.04em; }
-
-.news p {
-  font-size: 18px;
-  color: #828282; }
+.newsImg {
+  background-size: cover;
+  background-position: center;
+  height: 200px; }
 
 #emailNewsletter {
   background-color: #e5e5e5;
@@ -1008,7 +1191,7 @@ footer {
     margin: 20px 0 0 50px;
     font-weight: 500;
     font-size: 18px;
-    color: #C70015; }
+    color: #c70015; }
   #catalog_modal a {
     font-size: 14px; }
 

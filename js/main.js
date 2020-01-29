@@ -179,7 +179,7 @@ $(function() {
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 3000
   });
 
@@ -188,4 +188,7 @@ $(function() {
     overlay: 0.4,
     closeButton: ".modal_close"
   });
+
 });
+
+

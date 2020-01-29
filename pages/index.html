@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
     <title>Document</title>
 
     <link
@@ -36,29 +36,25 @@
               <li><a href="vinZapros.html">VIN Запрос</a></li>
               <li><a href="news.html">Новости</a></li>
               <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="#"><img src="../images/logo.png" alt="logo"/></a></li>
             </ul>
           </nav>
           <div id="accountMenu">
             <div id="loginToAccount">
               <a href="#">
-                <svg
-                  width="14"
-                  height="20"
-                  viewbox="0 0 14 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.0103 10.4754C11.7357 10.1762 11.2685 10.1557 10.9693 10.4303C10.6701 10.7049 10.6496 11.1721 10.9242 11.4713C11.83 12.459 12.33 13.7418 12.33 15.082V18.25C12.33 18.3975 12.207 18.5205 12.0595 18.5205H1.93242C1.78487 18.5205 1.66192 18.3975 1.66192 18.25V15.082C1.66192 12.1393 4.05537 9.75 6.99389 9.75C9.68242 9.75 11.8709 7.56148 11.8709 4.87295C11.8709 2.18443 9.68651 0 6.99799 0C4.30946 0 2.12094 2.18852 2.12094 4.87705C2.12094 5.68033 2.32176 6.47951 2.69881 7.18443C2.89143 7.54508 3.33815 7.67623 3.69881 7.48361C4.05946 7.29098 4.19061 6.84426 3.99799 6.48361C3.73569 5.9918 3.59635 5.43852 3.59635 4.87705C3.59635 3 5.12094 1.47541 6.99799 1.47541C8.87504 1.47541 10.3996 3 10.3996 4.87705C10.3996 6.7541 8.87504 8.27869 6.99799 8.27869C3.24389 8.27869 0.190613 11.332 0.190613 15.0861V18.2541C0.190613 19.2172 0.9734 20 1.93651 20H12.0636C13.0267 20 13.8095 19.2172 13.8095 18.2541V15.0861C13.8095 13.373 13.1701 11.7377 12.0103 10.4754Z"
-                    fill="black"
-                  />
-                </svg>
-                Войти</a
+                <img src="../images/account.png" alt="account"/>
+                <span>Войти</span> </a
               >
             </div>
             <div id="registration" class="accountMenuActive">
               <a href="#">Регистрация</a>
             </div>
+            <div id="adaptiveCart"><a href="#cart" rel="leanModal"
+              ><img src="../images/adaptivCart.png" alt="shopping-bag"/><span
+                id="qtyGoodsInBagAdaptive"
+                class="qtyGoodsInBag"
+              ></span
+            ></a></div>
           </div>
         </div>
       </div>
@@ -194,11 +190,11 @@
 
         <div id="searchByCategory">
           <div class="wrap">
-            <div><img src="../images/1.png" alt="line" /></div>
+            <div class="line"></div>
             <div><h2>Поиск по категориям</h2></div>
-            <div><img src="../images/1.png" alt="line" /></div>
+            <div class="line"></div>
           </div>
-          <div class="categories">
+          <div class="categories" id="categoriesMainPage">
             <a href="#" class="wrap"
               ><img src="../images/hiclipart1.png" alt="image" />
               <h3>Шины</h3></a
@@ -325,8 +321,9 @@
               <a href="news.html"><button>Все новости</button></a>
             </div>
             <a href="news.html">
-              <div class="news">
-                <img src="../images/photo1.jpg" alt="photo" />
+              <div class="news" id="news1">
+                <div class="newsImg"></div>
+                
                 <h3>Lorem ipsum dolor</h3>
                 <span>February 26, 2014 </span>
                 <p>
@@ -338,8 +335,9 @@
               </div>
             </a>
             <a href="news.html">
-              <div class="news">
-                <img src="../images/photo2.jpg" alt="photo" />
+              <div class="news" id="news2">
+                <div class="newsImg"></div>
+               
                 <h3>Lorem ipsum dolor</h3>
                 <span>February 26, 2014 </span>
                 <p>
