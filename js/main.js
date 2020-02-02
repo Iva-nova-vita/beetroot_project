@@ -167,10 +167,52 @@ $(function() {
   showMiniCart();
   loadCart();
 
-  $("#popGoodsSlider").slick({
+  // $("#popGoodsSlider").slick({
+  //   infinite: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1
+  // });
+
+  $('#popGoodsSlider').slick({
+    //dots: true,
     infinite: true,
+    speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      // {
+      //   breakpoint: 1090,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     slidesToScroll: 3,
+      //     infinite: true,
+      //     dots: true
+      //   }
+      //},
+      {
+        breakpoint: 1090,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        }
+      }
+    ]
   });
 
   $("#bannersSlider").slick({
