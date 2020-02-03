@@ -419,6 +419,13 @@ button[type="submit"] {
       left: 22px;
     }
   }
+  @media screen and (max-width: 960px) {
+    & {
+      width: 110px;
+      height: 40px;
+      font-size: 12px;
+    }
+  }
   background: #c70015;
   border-radius: 35px 0px 0px 35px;
   border: none;
@@ -1578,10 +1585,8 @@ footer {
   padding: 30px;
   @media screen and (max-width: 960px) {
     & {
-      
-  padding: 15px;
-  max-height: 450px;
-      
+      padding: 15px;
+      max-height: 450px;
     }
   }
   overflow: auto;
@@ -1611,7 +1616,6 @@ div#cart.modal {
     & {
       top: 60px !important;
       left: 50% !important;
-   
     }
   }
 }
