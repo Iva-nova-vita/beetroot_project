@@ -1,5 +1,6 @@
 {
   "11": {
+    "category": 1,
     "name": "Шина",
     "brend": "Premiorri 428120",
     "cost": 1520,
@@ -7,6 +8,7 @@
     "img": "../images/kisspng-car-bicycle.png"
   },
   "12": {
+    "category": 1,
     "name": "Шина",
     "brend": "Premiorri 42222",
     "cost": 1720,
@@ -14,6 +16,7 @@
     "img": "../images/kisspng-car-bicycle.png"
   },
   "13": {
+    "category": 1,
     "name": "Шина",
     "brend": "Premiorri 5636",
     "cost": 1910,
@@ -21,6 +24,7 @@
     "img": "../images/kisspng-car-bicycle.png"
   },
   "14": {
+    "category": 1,
     "name": "Шина",
     "brend": "Premiorri 96954",
     "cost": 980,
@@ -28,6 +32,7 @@
     "img": "../images/kisspng-car-bicycle.png"
   },
   "21": {
+    "category": 2,
     "name": "Фара",
     "brend": "Ferarri 11125",
     "cost": 2520,
@@ -35,6 +40,7 @@
     "img": "../images/slide2pop.png"
   },
   "22": {
+    "category": 2,
     "name": "Фара",
     "brend": "Ferarri 8965874",
     "cost": 1330,
@@ -42,6 +48,7 @@
     "img": "../images/slide2pop.png"
   },
   "23": {
+    "category": 2,
     "name": "Фара",
     "brend": "Ferarri 425896",
     "cost": 1420,
@@ -49,6 +56,7 @@
     "img": "../images/slide2pop.png"
   },
   "24": {
+    "category": 2,
     "name": "Фара",
     "brend": "Ferarri 55636",
     "cost": 2910,
@@ -56,6 +64,7 @@
     "img": "../images/slide2pop.png"
   },
   "25": {
+    "category": 2,
     "name": "Фара",
     "brend": "Ferarri 454899",
     "cost": 2590,
@@ -64,6 +73,7 @@
   },
   
   "31": {
+    "category": 3,
     "name": "Масло машинное",
     "brend": "Oil 54440",
     "cost": 210,
@@ -71,6 +81,7 @@
     "img": "../images/slide3pop.png"
   },
   "32": {
+    "category": 3,
     "name": "Масло машинное",
     "brend": "Oil 74440",
     "cost": 230,
@@ -78,6 +89,7 @@
     "img": "../images/slide3pop.png"
   },
   "33": {
+    "category": 3,
     "name": "Масло машинное",
     "brend": "Oil 99655",
     "cost": 910,
@@ -85,6 +97,7 @@
     "img": "../images/slide3pop.png"
   },
   "34": {
+    "category": 3,
     "name": "Масло машинное",
     "brend": "Oil 6564",
     "cost": 110,
@@ -92,6 +105,7 @@
     "img": "../images/slide3pop.png"
   },
   "35": {
+    "category": 3,
     "name": "Масло машинное",
     "brend": "Oil 5464",
     "cost": 270,
@@ -99,6 +113,7 @@
     "img": "../images/slide3pop.png"
   },
   "41": {
+    "category": 4,
     "name": "Свечи автомобильные",
     "brend": "Lada 558966",
     "cost": 840,
@@ -106,6 +121,7 @@
     "img": "../images/zapchasti-dlya-to_4.png"
   },
   "42": {
+    "category": 4,
     "name": "Свечи автомобильные",
     "brend": "Lada 6654",
     "cost": 740,
@@ -113,6 +129,7 @@
     "img": "../images/zapchasti-dlya-to_4.png"
   },
   "43": {
+    "category": 4,
     "name": "Свечи автомобильные",
     "brend": "Lada 111166",
     "cost": 890,
@@ -120,6 +137,7 @@
     "img": "../images/zapchasti-dlya-to_4.png"
   },
   "44": {
+    "category": 4,
     "name": "Свечи автомобильные",
     "brend": "Lada 563256",
     "cost": 780,
@@ -127,6 +145,15 @@
     "img": "../images/zapchasti-dlya-to_4.png"
   },
   "45": {
+    "category": 4,
+    "name": "Свечи автомобильные",
+    "brend": "Lada 558776",
+    "cost": 900,
+    "description": "Автомобильная свеча",
+    "img": "../images/zapchasti-dlya-to_4.png"
+  },
+  "51": {
+    "category": 5,
     "name": "Свечи автомобильные",
     "brend": "Lada 558776",
     "cost": 900,

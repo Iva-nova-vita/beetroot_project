@@ -6,20 +6,34 @@ function init() {
 
 function goodsOut(data) {
   // вывод товаров на страницу
-
+  let id = 1;
   let out = "";
   for (let key in data) {
-    out += '<div class="productItem">';
-    out += `<img src="${data[key].img}" alt="">`;
-    out += `<p>${data[key].name}</p>`;
-    out += `<span>${data[key].brend}</span>`;
-    out += `<h3>${data[key].description}</h3>`;
-    out += `<div><span>${data[key].cost} грн</span>`;
-    out += `<button><img src="../images/heart.png" alt="heart" /></button>`;
-    out += `<button class="addToCart" data-id="${key}"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>`;
-    out += "</div></div>";
+    let category = `${data[key].category}`;
+    if (id == category) {
+      out += '<div class="productItem">';
+      out += `<img src="${data[key].img}" alt="">`;
+      out += `<p>${data[key].name}</p>`;
+      out += `<span>${data[key].brend}</span>`;
+      out += `<h3>${data[key].description}</h3>`;
+      out += `<div><span>${data[key].cost} грн</span>`;
+      out += `<button><img src="../images/heart.png" alt="heart" /></button>`;
+      out += `<button class="addToCart" data-id="${key}"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>`;
+      out += "</div></div>";
+    } else {
+      $(`#category${id}`).html(out);
+      out = '<div class="productItem">';
+      out += `<img src="${data[key].img}" alt="">`;
+      out += `<p>${data[key].name}</p>`;
+      out += `<span>${data[key].brend}</span>`;
+      out += `<h3>${data[key].description}</h3>`;
+      out += `<div><span>${data[key].cost} грн</span>`;
+      out += `<button><img src="../images/heart.png" alt="heart" /></button>`;
+      out += `<button class="addToCart" data-id="${key}"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>`;
+      out += "</div></div>";
+      id++;
+    }
   }
-  $(".goodsOut").html(out);
   $(".addToCart").on("click", addToCart);
 }
 function addToCart() {
@@ -47,12 +61,12 @@ function showMiniCart(data) {
     let totalCost = 0;
     let out = 0;
     for (let id in cart) {
-    out += cart[id];
-    totalCost += cart[id]*goods[id].cost;
-  }
-  $(".qtyGoodsInBag").html(out);
-  $(".totalCost").html(totalCost);
-});
+      out += cart[id];
+      totalCost += cart[id] * goods[id].cost;
+    }
+    $(".qtyGoodsInBag").html(out);
+    $(".totalCost").html(totalCost);
+  });
 }
 
 function loadCart() {
@@ -89,7 +103,7 @@ function showCart() {
         out += `<button data-id="${id}" class="delGoods"></button>`;
         out += `<a href="#">Детали</a>`;
         out += "</div></div>";
-        totalCost += cart[id]*goods[id].cost;
+        totalCost += cart[id] * goods[id].cost;
       }
       $(".mainCart").html(out);
       $(".totalCost").html(totalCost);
@@ -173,7 +187,7 @@ $(function() {
   //   slidesToScroll: 1
   // });
 
-  $('#popGoodsSlider').slick({
+  $("#popGoodsSlider").slick({
     //dots: true,
     infinite: true,
     speed: 300,
@@ -230,7 +244,4 @@ $(function() {
     overlay: 0.4,
     closeButton: ".modal_close"
   });
-
 });
-
-
