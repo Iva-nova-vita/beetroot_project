@@ -5,12 +5,12 @@ function init() {
 }
 
 function goodsOut(data) {
-  // вывод товаров на страницу
-  let id = 1;
+  // вывод товаров на страницы по категориям
+  let id = 0;
   let out = "";
   for (let key in data) {
-    let category = `${data[key].category}`;
-    if (id == category) {
+    id = `${data[key].category}`;
+    
       out += '<div class="productItem">';
       out += `<img src="${data[key].img}" alt="">`;
       out += `<p>${data[key].name}</p>`;
@@ -20,22 +20,15 @@ function goodsOut(data) {
       out += `<button><img src="../images/heart.png" alt="heart" /></button>`;
       out += `<button class="addToCart" data-id="${key}"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>`;
       out += "</div></div>";
-    } else {
-      $(`#category${id}`).html(out);
-      out = '<div class="productItem">';
-      out += `<img src="${data[key].img}" alt="">`;
-      out += `<p>${data[key].name}</p>`;
-      out += `<span>${data[key].brend}</span>`;
-      out += `<h3>${data[key].description}</h3>`;
-      out += `<div><span>${data[key].cost} грн</span>`;
-      out += `<button><img src="../images/heart.png" alt="heart" /></button>`;
-      out += `<button class="addToCart" data-id="${key}"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>`;
-      out += "</div></div>";
-      id++;
-    }
+      $(`#category${id}`).append(out);
+      out="";
   }
   $(".addToCart").on("click", addToCart);
 }
+
+
+
+
 function addToCart() {
   //добавляем товар в корзину
   let id = $(this).attr("data-id");
@@ -235,7 +228,7 @@ $(function() {
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000
   });
 

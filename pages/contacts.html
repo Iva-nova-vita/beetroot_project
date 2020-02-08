@@ -36,29 +36,25 @@
               <li><a href="vinZapros.html">VIN Запрос</a></li>
               <li><a href="news.html">Новости</a></li>
               <li class="activeNav"><a href="#">Контакты</a></li>
+              <li><a href="index.html"><img src="../images/logo.png" alt="logo"/></a></li>
             </ul>
           </nav>
           <div id="accountMenu">
             <div id="loginToAccount">
               <a href="#">
-                <svg
-                  width="14"
-                  height="20"
-                  viewbox="0 0 14 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.0103 10.4754C11.7357 10.1762 11.2685 10.1557 10.9693 10.4303C10.6701 10.7049 10.6496 11.1721 10.9242 11.4713C11.83 12.459 12.33 13.7418 12.33 15.082V18.25C12.33 18.3975 12.207 18.5205 12.0595 18.5205H1.93242C1.78487 18.5205 1.66192 18.3975 1.66192 18.25V15.082C1.66192 12.1393 4.05537 9.75 6.99389 9.75C9.68242 9.75 11.8709 7.56148 11.8709 4.87295C11.8709 2.18443 9.68651 0 6.99799 0C4.30946 0 2.12094 2.18852 2.12094 4.87705C2.12094 5.68033 2.32176 6.47951 2.69881 7.18443C2.89143 7.54508 3.33815 7.67623 3.69881 7.48361C4.05946 7.29098 4.19061 6.84426 3.99799 6.48361C3.73569 5.9918 3.59635 5.43852 3.59635 4.87705C3.59635 3 5.12094 1.47541 6.99799 1.47541C8.87504 1.47541 10.3996 3 10.3996 4.87705C10.3996 6.7541 8.87504 8.27869 6.99799 8.27869C3.24389 8.27869 0.190613 11.332 0.190613 15.0861V18.2541C0.190613 19.2172 0.9734 20 1.93651 20H12.0636C13.0267 20 13.8095 19.2172 13.8095 18.2541V15.0861C13.8095 13.373 13.1701 11.7377 12.0103 10.4754Z"
-                    fill="black"
-                  />
-                </svg>
-                Войти</a
+                <img src="../images/account.png" alt="account"/>
+                <span>Войти</span> </a
               >
             </div>
             <div id="registration" class="accountMenuActive">
               <a href="#">Регистрация</a>
             </div>
+            <div id="adaptiveCart"><a href="#cart" rel="leanModal"
+              ><img src="../images/adaptivCart.png" alt="shopping-bag"/><span
+                id="qtyGoodsInBagAdaptive"
+                class="qtyGoodsInBag"
+              ></span
+            ></a></div>
           </div>
         </div>
       </div>
@@ -93,15 +89,17 @@
 
           <div id="inShoppingBag">
             <a href="#cart" class="boxShadow" rel="leanModal"
-              ><img
-                src="../images/shopping-bag-1.png"
-                alt="shopping-bag"
-              /><span id="qtyGoodsInBag" class="qtyGoodsInBag"></span></a
-              >
-  
-              <p>
-                В корзине<br />
-                <a href="#" class="underline qtyGoodsInBag">0 </a><a href="#cart" class="underline" rel="leanModal"> товара,</a> <span class="totalCost"></span><span> грн.</span>
+              ><img src="../images/shopping-bag-1.png" alt="shopping-bag"/><span
+                id="qtyGoodsInBag"
+                class="qtyGoodsInBag"
+              ></span
+            ></a>
+
+            <p>
+              В корзине<br />
+              <a href="#" class="underline qtyGoodsInBag">0 </a
+              ><a href="#cart" rel="leanModal" class="underline"> товара,</a>
+              <span class="totalCost"></span><span> грн.</span>
             </p>
           </div>
         </div>
@@ -115,6 +113,26 @@
               ><img src="../images/speech-bubble-2 1.png" alt="menu"
             /></a>
           </button>
+
+
+
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="index.html">Главная</a></li>
+              <li><a class="menu__item" href="catalog.html">Каталог</a></li>
+              <li><a class="menu__item" href="toClients.html">Клиентам</a></li>
+              <li><a class="menu__item" href="vinZapros.html">VIN Запрос</a></li>
+              <li><a class="menu__item" href="news.html">Новости</a></li>
+              <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+
+
+
 
           <input
             type="search"
@@ -213,16 +231,16 @@
       </div>
     </main>
     <footer>
-      <div class="wrap container">
+      <div id="fullScreenFooter" class="wrap container">
         <div class="logo">
           <a href="index.html"><img src="../images/logo.png" alt="logo"/></a>
         </div>
         <div>
           <h3>Навигация</h3>
-          <a href="#"><h4>Шины</h4></a>
-          <a href="#"><h4>Автозапчасти</h4></a>
-          <a href="#"><h4>Масла и смазки</h4></a>
-          <a href="#"><h4>Автотовары</h4></a>
+          <a href="category1.html"><h4>Шины</h4></a>
+          <a href="category2.html"><h4>Автозапчасти</h4></a>
+          <a href="category3.html"><h4>Масла и смазки</h4></a>
+          <a href="category4.html"><h4>Автотовары</h4></a>
           <a href="#"><h4>Аксессуары</h4></a>
           <a href="#"><h4>Технические жидкости</h4></a>
         </div>
@@ -234,7 +252,7 @@
           <a href="toClients.html#payment"><h4>Оплата</h4></a>
           <a href="toClients.html#delivery"><h4>Доставка</h4></a>
           <a href="toClients.html#guarantees"><h4>Гарантии</h4></a>
-          <a href="#"><h4>Новости</h4></a>
+          <a href="news.html"><h4>Новости</h4></a>
         </div>
 
         <div>
@@ -247,112 +265,119 @@
             <img src="../images/phone-call_2.png" alt="phone" /> 38(063) 324 60
             60</a
           >
-
           <a href="https://goo.gl/maps/U8C5gK7Najyduqhi8" target="blank">
             <img src="../images/placeholder2.png" alt="geo" /> г.Винница,
             ул.Киевская 78</a
           >
         </div>
       </div>
-    </footer>
-  </body>
-  
-  <div id="allModalWindows">
-    <div id="modalCallMe" class="modal">
-      <img src="../images/VectorX.png" class="modal_close" />
-      <h3>Перезвонить вам ?</h3>
-      <p>
-        Оставьте ваш номер. <br />
-        Мы перезвоним вам в течении 5 минут!
-      </p>
-      <form action="#" method="GET">
-        <input name="name" type="text" placeholder="Имя" /> <br />
-        <input name="tel" type="tel" placeholder="+38(099)000-00-00" />
-        <button type="submit">
-          Заказать звонок
-        </button>
-      </form>
-    </div>
-  
-    <div id="cart" class="modal">
-      <div class="wrap">
-        <div>
-          <span class="qtyGoodsInBag underline"></span
-          ><span class="underline"> позиции</span>
-        </div>
-        <div>
-          <p>Сумма</p>
-          <span class="totalCost"></span>
-        </div>
-  
-        
+      <div id="mobileFooter">
+        <a href="#"><img src="../images/logo.png" alt="logo"/></a>
+        <a href="tel:38(063) 324 60 60" target="blank">
+          <img src="../images/phone-call_2.png" alt="phone" /></a
+        >
+        <a href="https://goo.gl/maps/U8C5gK7Najyduqhi8" target="blank">
+          <img src="../images/placeholder2.png" alt="geo" /></a
+        >
       </div>
-      <a href="#"
+      <span>@PromCenter.2019</span>
+    </footer>
+
+    <div id="allModalWindows">
+      <div id="modalCallMe" class="modal">
+        <img src="../images/VectorX.png" class="modal_close" />
+        <h3>Перезвонить вам ?</h3>
+        <p>
+          Оставьте ваш номер. <br />
+          Мы перезвоним вам в течении 5 минут!
+        </p>
+        <form action="#" method="GET">
+          <input name="name" type="text" placeholder="Имя" /> <br />
+          <input name="tel" type="tel" placeholder="+38(099)000-00-00" />
+          <button type="submit">
+            Заказать звонок
+          </button>
+        </form>
+      </div>
+
+      <div id="cart" class="modal">
+        <div class="wrap">
+          <div>
+            <span class="qtyGoodsInBag underline"></span
+            ><span class="underline"> позиции</span>
+          </div>
+          <div>
+            <p>Сумма</p>
+            <span class="totalCost"></span>
+          </div>
+        </div>
+        <a href="#"
           ><button class="checkout">
             Оформить заказ
           </button>
         </a>
         <div class="mainCart"></div>
-    </div>
+      </div>
 
-    <div id="catalog_modal" class="modal">
-      <div class="categories">
-        <div class="categoriesItem">
-          <a href="category1.html" class="wrap"> <h3>Шины</h3></a>
-          <a href="#">Аграрные</a>
-          <a href="#">Грузовые</a>
-          <a href="#">Легковые</a>
-          <a href="#">Легкогрузовые</a>
-          <a href="#">Индустриальные</a>
-        </div>
-        <div class="categoriesItem">
-          <a href="#" class="wrap"> <h3>Автозапчасти</h3></a>
-          <a href="#">Автобусы</a>
-          <a href="#">Грузовые автомобили</a>
-          <a href="#">Легковые автомобили</a>
-          <a href="#">Импорт</a>
-        </div>
-        <div class="categoriesItem">
-          <a href="#" class="wrap"> <h3>Масла и смазки</h3></a>
-          <a href="#">Масла</a>
-          <a href="#">Смазки</a>
-        </div>
+      <div id="catalog_modal" class="modal">
+        <div class="categories">
+          <div class="categoriesItem">
+            <a href="category1.html" class="wrap"> <h3>Шины</h3></a>
+            <a href="#">Аграрные</a>
+            <a href="#">Грузовые</a>
+            <a href="#">Легковые</a>
+            <a href="#">Легкогрузовые</a>
+            <a href="#">Индустриальные</a>
+          </div>
+          <div class="categoriesItem">
+            <a href="category2.html" class="wrap"> <h3>Автозапчасти</h3></a>
+            <a href="#">Автобусы</a>
+            <a href="#">Грузовые автомобили</a>
+            <a href="#">Легковые автомобили</a>
+            <a href="#">Импорт</a>
+          </div>
+          <div class="categoriesItem">
+            <a href="category3.html" class="wrap"> <h3>Масла и смазки</h3></a>
+            <a href="#">Масла</a>
+            <a href="#">Смазки</a>
+          </div>
 
-        <div class="categoriesItem">
-          <a href="#" class="wrap"> <h3>Автотовары</h3></a>
-          <a href="#">Автокамеры</a>
-          <a href="#">Аккумуляторы</a>
-          <a href="#">Лампы и оптика</a>
-          <a href="#">Ободная лента</a>
-          <a href="#">Подшипники</a>
-          <a href="#">Ремни</a>
-        </div>
-        <div class="categoriesItem">
-          <a href="#" class="wrap">
-            <h3>
-              Технические жидкости
-            </h3></a>
-          <a href="#">Вода</a>
-          <a href="#">Жидкость бачка омывателя</a>
-          <a href="#">Охлаждающая жидкость</a>
-          <a href="#">Тормозная жидкость</a>
-        </div>
-        <div class="categoriesItem">
-          <a href="#" class="wrap"> <h3>Аксессуары к авто</h3></a>
-          <a href="#">Автокосметика</a>
-          <a href="#">Автомобильные пренадлежности</a>
-          <a href="#">Автохимия</a>
-          <a href="#">Герметики</a>
-          <a href="#">Инструменты</a>
+          <div class="categoriesItem">
+            <a href="category4.html" class="wrap"> <h3>Автотовары</h3></a>
+            <a href="#">Автокамеры</a>
+            <a href="#">Аккумуляторы</a>
+            <a href="#">Лампы и оптика</a>
+            <a href="#">Ободная лента</a>
+            <a href="#">Подшипники</a>
+            <a href="#">Ремни</a>
+          </div>
+          <div class="categoriesItem">
+            <a href="#" class="wrap">
+              <h3>
+                Технические жидкости
+              </h3></a>
+            <a href="#">Вода</a>
+            <a href="#">Жидкость бачка омывателя</a>
+            <a href="#">Охлаждающая жидкость</a>
+            <a href="#">Тормозная жидкость</a>
+          </div>
+          <div class="categoriesItem">
+            <a href="#" class="wrap"> <h3>Аксессуары к авто</h3></a>
+            <a href="#">Автокосметика</a>
+            <a href="#">Автомобильные пренадлежности</a>
+            <a href="#">Автохимия</a>
+            <a href="#">Герметики</a>
+            <a href="#">Инструменты</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="../js/main.js"></script>
-  <script
-    type="text/javascript"
-    src="../slick-1.8.1/slick/slick.min.js"
-  ></script>
-  <script src="../js/jquery.leanModal.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="../slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../js/jquery.leanModal.min.js"></script>
+  </body>
 </html>

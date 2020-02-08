@@ -151,13 +151,5 @@
     "cost": 900,
     "description": "Автомобильная свеча",
     "img": "../images/zapchasti-dlya-to_4.png"
-  },
-  "51": {
-    "category": 5,
-    "name": "Свечи автомобильные",
-    "brend": "Lada 558776",
-    "cost": 900,
-    "description": "Автомобильная свеча",
-    "img": "../images/zapchasti-dlya-to_4.png"
   }
 }

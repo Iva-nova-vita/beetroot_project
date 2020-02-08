@@ -42,7 +42,7 @@ nav {
     justify-content: space-between;
     @media screen and (max-width: 960px) {
       & {
-        margin: 8px;
+        margin: 8px 0;
       }
     }
     li {
@@ -313,7 +313,8 @@ nav {
   }
   @media screen and (max-width: 960px) {
     & {
-      width: 100%;
+      width: 80%;
+      padding: 0 0 0 4%;
     }
   }
 
@@ -339,7 +340,7 @@ nav {
     font-weight: 500;
     @media screen and (max-width: 960px) {
       & {
-        font-size: 1px;
+        font-size: 0.0001px;
       }
     }
   }
@@ -421,9 +422,7 @@ button[type="submit"] {
   }
   @media screen and (max-width: 960px) {
     & {
-      width: 110px;
-      height: 40px;
-      font-size: 12px;
+      display: none;
     }
   }
   background: #c70015;
@@ -448,6 +447,119 @@ button[type="submit"] {
   img {
     padding-top: 5px;
   }
+}
+
+.hamburger-menu {
+  display: none;
+  @media screen and (max-width: 960px) {
+    & {
+      display: block;
+      z-index: 1000;
+    }
+  }
+}
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center; /* центрируем содержимое кнопки */
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  width: 26px;
+  height: 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+
+  border-radius: 100px;
+  background-color: #c70015;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+
+  height: 337px;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 420px) {
+    & {
+      width: 100vw;
+    }
+  }
+}
+
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 23px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+  &:active {
+    color: #c70015;
+  }
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: 0.25s;
+}
+.menu__box {
+  transition-duration: 0.25s;
+}
+.menu__item {
+  transition-duration: 0.25s;
 }
 
 #banners {
@@ -531,7 +643,7 @@ button[type="submit"] {
     @media screen and (max-width: 771px) {
       & {
         font-size: 14px;
-        width: 160px;
+        width: 150px;
         img {
           width: 20px;
         }
@@ -619,7 +731,7 @@ button[type="submit"] {
     padding: 0 15px;
     @media screen and (max-width: 1115px) {
       & {
-        font-size: 18px;
+        font-size: 14px;
         left: 5px;
       }
     }
@@ -682,7 +794,7 @@ button[type="submit"] {
     padding: 0 15px;
     @media screen and (max-width: 1115px) {
       & {
-        font-size: 18px;
+        font-size: 14px;
         right: 5px;
       }
     }
@@ -860,7 +972,10 @@ button[type="submit"] {
     }
     h3 {
       font-weight: 300;
-      font-size: 14px;
+      font-size: 12px;
+    }
+    img {
+      //width: 50%;
     }
   }
   h3 {
