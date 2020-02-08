@@ -384,7 +384,9 @@ nav {
   width: 50%; }
   #loginToAccount img {
     height: 22px;
-    padding-top: 20px; }
+    padding-top: 18px; }
+  #loginToAccount span {
+    vertical-align: top; }
   @media screen and (max-width: 960px) {
     #loginToAccount {
       width: 40px; }
@@ -700,7 +702,6 @@ button[type="submit"] {
   top: 0;
   left: -100%;
   width: 300px;
-  height: 337px;
   margin: 0;
   padding: 80px 0;
   list-style: none;
@@ -714,10 +715,10 @@ button[type="submit"] {
 /* элементы меню */
 .menu__item {
   display: block;
-  padding: 23px 24px;
+  padding: 20px 24px;
   color: #333;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); }
@@ -1046,7 +1047,9 @@ button[type="submit"] {
         grid-row-gap: 18px; }
       .categories h3 {
         font-weight: 300;
-        font-size: 12px; } }
+        font-size: 14px; }
+      .categories img {
+        width: 120px; } }
   .categories h3 {
     font-weight: 500; }
 
@@ -1250,11 +1253,11 @@ button[type="submit"] {
     @media screen and (min-width: 591px) and (max-width: 806px) {
       #lastNews .wrap > a:nth-of-type(1) {
         width: 60%; } }
-    @media screen and (min-width: 471px) and (max-width: 590px) {
+    @media screen and (min-width: 371px) and (max-width: 590px) {
       #lastNews .wrap > a:nth-of-type(1) {
         width: 80%;
         margin: 0 auto; } }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 370px) {
       #lastNews .wrap > a:nth-of-type(1) {
         width: 100%; } }
     @media screen and (max-width: 806px) {
@@ -1275,6 +1278,9 @@ button[type="submit"] {
 
 .news {
   width: 95%; }
+  @media screen and (max-width: 370px) {
+    .news {
+      width: 100%; } }
   .news h3 {
     font-weight: 500;
     font-size: 30px;
