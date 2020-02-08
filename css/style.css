@@ -1244,7 +1244,8 @@ button[type="submit"] {
     margin-bottom: 250px; }
   @media screen and (min-width: 591px) and (max-width: 806px) {
     #lastNews .wrap > div {
-      width: 40%; } }
+      width: 40%;
+      padding-left: 11%; } }
   @media screen and (max-width: 590px) {
     #lastNews .wrap > div {
       display: none; } }
@@ -1277,10 +1278,11 @@ button[type="submit"] {
   border-radius: 5px; }
 
 .news {
-  width: 95%; }
-  @media screen and (max-width: 370px) {
+  width: 95%;
+  margin: 0 auto; }
+  @media screen and (max-width: 806px) {
     .news {
-      width: 100%; } }
+      width: 280px; } }
   .news h3 {
     font-weight: 500;
     font-size: 30px;

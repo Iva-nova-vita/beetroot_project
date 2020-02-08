@@ -1257,6 +1257,7 @@ button[type="submit"] {
       @media screen and (min-width: 591px) and (max-width: 806px) {
         & {
           width: 40%;
+          padding-left: 11%;
         }
       }
       @media screen and (max-width: 590px) {
@@ -1314,11 +1315,13 @@ button[type="submit"] {
 }
 .news {
   width: 95%;
-  @media screen and (max-width: 370px) {
+  margin: 0 auto;
+  @media screen  and (max-width: 806px) {
     & {
-      width: 100%;
+      width: 280px;
     }
   }
+ 
   h3 {
     font-weight: 500;
     font-size: 30px;
