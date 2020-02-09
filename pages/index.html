@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
     <title>Prom Center</title>
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
-
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../slick-1.8.1/slick/slick-theme.css"
-    />
-
+      href="../slick-1.8.1/slick/slick-theme.css"/>
     <link
       rel="stylesheet"
       type="text/css"
-      href="../slick-1.8.1/slick/slick.css"
-    />
+      href="../slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="../css/style.css" />
-    
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -38,29 +32,29 @@
               <li><a href="vinZapros.html">VIN Запрос</a></li>
               <li><a href="news.html">Новости</a></li>
               <li><a href="contacts.html">Контакты</a></li>
-              <li><a href="#"><img src="../images/logo.png" alt="logo"/></a></li>
+              <li>
+              <a href="#"><img src="../images/logo.png" alt="logo"/></a>
+              </li>
             </ul>
           </nav>
           <div id="accountMenu">
             <div id="loginToAccount">
               <a href="#">
-                <img src="../images/account.png" alt="account"/>
-                <span>Войти</span> </a
-              >
+                <img src="../images/account.png" alt="account" />
+                <span>Войти</span>
+              </a>
             </div>
             <div id="registration" class="accountMenuActive">
               <a href="#">Регистрация</a>
             </div>
-            <div id="adaptiveCart"><a href="#cart" rel="leanModal"
-              ><img src="../images/adaptivCart.png" alt="shopping-bag"/><span
-                id="qtyGoodsInBagAdaptive"
-                class="qtyGoodsInBag"
-              ></span
-            ></a></div>
+            <div id="adaptiveCart">
+              <a href="#cart" rel="leanModal"><img src="../images/adaptivCart.png" alt="shopping-bag"/><span
+                  id="qtyGoodsInBagAdaptive"
+                  class="qtyGoodsInBag"></span></a>
+            </div>
           </div>
         </div>
       </div>
-
       <div class="container">
         <div id="headerBottom" class="wrap">
           <div class="logo">
@@ -71,32 +65,21 @@
             <a
               href="https://goo.gl/maps/mpmMWJYXLAgmaquP8"
               target="blank"
-              class="underline"
-            >
-              Винница</a
-            >
+              class="underline"> Винница</a>
           </div>
-
           <div id="callMe">
             <a href="#modalCallMe" rel="leanModal" class="boxShadow"
-              ><img src="../images/phone-call-1.png" alt="phone"
-            /></a>
+              ><img src="../images/phone-call-1.png" alt="phone"/></a>
             <p>
               <span>Ежедневно с 9.00 до 20.00</span> <br />
-              +38 (068) 324 60 60 <br /><a href="#modalCallMe" rel="leanModal"
-                >Перезвоните мне</a
-              >
+              +38 (068) <img/>324 60 60 <br /><a href="#modalCallMe" rel="leanModal"
+                >Перезвоните мне</a>
             </p>
           </div>
-
           <div id="inShoppingBag">
-            <a href="#cart" class="boxShadow" rel="leanModal"
-              ><img src="../images/shopping-bag-1.png" alt="shopping-bag"/><span
+            <a href="#cart" class="boxShadow" rel="leanModal"><img src="../images/shopping-bag-1.png" alt="shopping-bag"/><span
                 id="qtyGoodsInBag"
-                class="qtyGoodsInBag"
-              ></span
-            ></a>
-
+                class="qtyGoodsInBag"></span></a>
             <p>
               В корзине<br />
               <a href="#" class="underline qtyGoodsInBag">0 </a
@@ -110,14 +93,9 @@
         <form action="#" method="GET" class="container">
           <button id="btnCatalog">
             <a href="catalog.html"> Каталог</a>
-
             <a href="#catalog_modal" rel="leanModal"
-              ><img src="../images/speech-bubble-2 1.png" alt="menu"
-            /></a>
+              ><img src="../images/speech-bubble-2 1.png" alt="menu"/></a>
           </button>
-
-
-
           <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
@@ -127,50 +105,34 @@
               <li><a class="menu__item" href="index.html">Главная</a></li>
               <li><a class="menu__item" href="catalog.html">Каталог</a></li>
               <li><a class="menu__item" href="toClients.html">Клиентам</a></li>
-              <li><a class="menu__item" href="vinZapros.html">VIN Запрос</a></li>
+              <li>
+              <a class="menu__item" href="vinZapros.html">VIN Запрос</a>
+              </li>
               <li><a class="menu__item" href="news.html">Новости</a></li>
               <li><a class="menu__item" href="contacts.html">Контакты</a></li>
             </ul>
           </div>
-
-
-
-
           <input
             type="search"
             placeholder="Поиск по названию"
             id="searchByName"
-            name="name"
-          />
+            name="name"/>
           <input
             type="search"
             placeholder="по номеру запчасти"
             id="searchByNumber"
-            name="number"
-          />
+            name="number"/>
           <button type="submit">
             <img src="../images/Vector.png" alt="search" /> искать
           </button>
         </form>
       </div>
     </header>
-
     <main>
       <div class="container">
         <div id="banners">
           <div id="bannersSlider">
             <div id="firstSlidebannersSlider">
-              <!-- <h1>
-                Lorem ipsum dolor <br />
-                sit amet
-              </h1>
-              <img src="images/car_wheel_png1076_19512_1.png" alt="drive" />
-              <br />
-              <a href="#"
-                ><button>
-                  Подробнее <img src="images/Vector22.png" alt="arrow" />
-                </button>
-              </a>-->
               <a href="#"><img src="../images/Slide1banner.png" alt=""/></a>
             </div>
             <div><h1>Slide2</h1></div>
@@ -184,11 +146,8 @@
             </h2>
             <img
               src="../images/rotinger-brake-discs-drilled-grooved_31_1.png"
-              alt="drive"
-            />
-
-            <a href="#"
-              ><button class="bannersButton">
+              alt="drive"/>
+            <a href="#"><button class="bannersButton">
                 Подробнее <img src="../images/Vector22.png" alt="arrow" />
               </button>
             </a>
@@ -200,8 +159,7 @@
             </h2>
             <img
               src="../images/kisspng-car-nexen-tire-firestone-tire-and-rubber-company-v-kumho-tire-5b0d2700c8b538 1.png"
-              alt="drive"
-            />
+              alt="drive"/>
             <a href="#"
               ><button class="bannersButton">
                 Подробнее <img src="../images/Vector22.png" alt="arrow" />
@@ -209,7 +167,6 @@
             </a>
           </div>
         </div>
-
         <div id="searchByCategory">
           <div class="wrap">
             <div class="line"></div>
@@ -217,39 +174,25 @@
             <div class="line"></div>
           </div>
           <div class="categories" id="categoriesMainPage">
-            <a href="category1.html" class="wrap"
-              ><img src="../images/hiclipart1.png" alt="image" />
-              <h3>Шины</h3></a
-            >
-            <a href="category2.html" class="wrap"
-              ><img
+            <a href="category1.html" class="wrap"><img src="../images/hiclipart1.png" alt="image" />
+              <h3>Шины</h3></a>
+            <a href="category2.html" class="wrap"><img
                 src="../images/neoriginalnye-zapchasti-chevrolet2.png"
-                alt="image"
-              />
-              <h3>Автозапчасти</h3></a
-            >
-            <a href="category3.html" class="wrap"
-              ><img
+                alt="image"/>
+              <h3>Автозапчасти</h3></a>
+            <a href="category3.html" class="wrap"><img
                 src="../images/kisspng-car-synthetic-oil-valvoline-3.png"
-                alt="image"
-              />
-              <h3>Масла и смазки</h3></a
-            >
-            <a href="category4.html" class="wrap"
-              ><img src="../images/zapchasti-dlya-to_4.png" alt="image" />
-              <h3>Автотовары</h3></a
-            >
-            <a href="#" class="wrap"
-              ><img src="../images/Shell-oil5.png" alt="image" />
+                alt="image"/>
+              <h3>Масла и смазки</h3></a>
+            <a href="category4.html" class="wrap"><img src="../images/zapchasti-dlya-to_4.png" alt="image" />
+              <h3>Автотовары</h3></a>
+            <a href="#" class="wrap"><img src="../images/Shell-oil5.png" alt="image" />
               <h3>
                 Технические <br />
                 жидкости
-              </h3></a
-            >
-            <a href="#" class="wrap"
-              ><img src="../images/yay6.png" alt="image" />
-              <h3>Аксессуары к авто</h3></a
-            >
+              </h3></a>
+            <a href="#" class="wrap"><img src="../images/yay6.png" alt="image" />
+              <h3>Аксессуары к авто</h3></a>
           </div>
         </div>
       </div>
@@ -267,7 +210,6 @@
               <div class="productItem">
                 <a href="#">
                   <img src="../images/kisspng-car-bicycle.png" alt="goods" />
-
                   <p>Шины</p>
                   <h3>Шина Ceat Zoom Plus F 100/80-17 52P</h3>
                 </a>
@@ -279,11 +221,9 @@
                   </button>
                 </div>
               </div>
-
               <div class="productItem">
                 <a href="#">
                   <img src="../images/slide2pop.png" alt="goods" />
-
                   <p>Lorem ipsum</p>
                   <h3>Lorem ipsum dolor sit amet</h3>
                 </a>
@@ -295,11 +235,9 @@
                   </button>
                 </div>
               </div>
-
               <div class="productItem">
                 <a href="#">
                   <img src="../images/slide3pop.png" alt="goods" />
-
                   <p>Lorem ipsum</p>
                   <h3>Lorem ipsum dolor sit amet</h3>
                 </a>
@@ -311,11 +249,9 @@
                   </button>
                 </div>
               </div>
-
               <div class="productItem">
                 <a href="#">
                   <img src="../images/zapchasti-dlya-to_4.png" alt="goods" />
-
                   <p>Slide4</p>
                   <h3>
                     Lorem ipsum
@@ -347,7 +283,6 @@
             <a href="news.html">
               <div class="news" id="news1">
                 <div class="newsImg"></div>
-                
                 <h3>Lorem ipsum dolor</h3>
                 <span>February 26, 2014 </span>
                 <p>
@@ -361,7 +296,6 @@
             <a href="news.html">
               <div class="news" id="news2">
                 <div class="newsImg"></div>
-               
                 <h3>Lorem ipsum dolor</h3>
                 <span>February 26, 2014 </span>
                 <p>
@@ -376,7 +310,6 @@
           <a href="news.html"><button>Перейти</button></a>
         </div>
       </div>
-
       <div id="emailNewsletter">
         <form action="#" method="GET" class="container">
           <div class="wrap">
@@ -385,9 +318,7 @@
               <h3>Подписаться на рассылку</h3>
               <p>Будьте в курсе всех новинок и акций</p>
             </div>
-
             <input type="email" placeholder="E-mail" />
-
             <button type="submit">
               Подписаться
             </button>
@@ -395,7 +326,6 @@
         </form>
       </div>
     </main>
-
     <footer>
       <div id="fullScreenFooter" class="wrap container">
         <div class="logo">
@@ -410,7 +340,6 @@
           <a href="#"><h4>Аксессуары</h4></a>
           <a href="#"><h4>Технические жидкости</h4></a>
         </div>
-
         <div>
           <h3>Информация</h3>
           <a href="vinZapros.html"><h4>VIN - запрос</h4></a>
@@ -420,35 +349,28 @@
           <a href="toClients.html#guarantees"><h4>Гарантии</h4></a>
           <a href="news.html"><h4>Новости</h4></a>
         </div>
-
         <div>
           <h3>Связаться с нами</h3>
           <a href="tel:38(063) 324 60 60" target="blank"
             ><img src="../images/phone-call_2.png" alt="phone" /> 38(063) 324 60
-            60</a
-          >
+            60</a>
           <a href="tel:38(063) 324 60 60" target="blank">
             <img src="../images/phone-call_2.png" alt="phone" /> 38(063) 324 60
-            60</a
-          >
+            60</a>
           <a href="https://goo.gl/maps/U8C5gK7Najyduqhi8" target="blank">
             <img src="../images/placeholder2.png" alt="geo" /> г.Винница,
-            ул.Киевская 78</a
-          >
+            ул.Киевская 78</a>
         </div>
       </div>
       <div id="mobileFooter">
         <a href="#"><img src="../images/logo.png" alt="logo"/></a>
         <a href="tel:38(063) 324 60 60" target="blank">
-          <img src="../images/phone-call_2.png" alt="phone" /></a
-        >
+          <img src="../images/phone-call_2.png" alt="phone"/></a>
         <a href="https://goo.gl/maps/U8C5gK7Najyduqhi8" target="blank">
-          <img src="../images/placeholder2.png" alt="geo" /></a
-        >
+          <img src="../images/placeholder2.png" alt="geo"/></a>
       </div>
       <span>@PromCenter.2019</span>
     </footer>
-
     <div id="allModalWindows">
       <div id="modalCallMe" class="modal">
         <img src="../images/VectorX.png" class="modal_close" />
@@ -465,7 +387,6 @@
           </button>
         </form>
       </div>
-
       <div id="cart" class="modal">
         <div class="wrap">
           <div>
@@ -484,7 +405,6 @@
         </a>
         <div class="mainCart"></div>
       </div>
-
       <div id="catalog_modal" class="modal">
         <div class="categories">
           <div class="categoriesItem">
@@ -507,7 +427,6 @@
             <a href="#">Масла</a>
             <a href="#">Смазки</a>
           </div>
-
           <div class="categoriesItem">
             <a href="category4.html" class="wrap"> <h3>Автотовары</h3></a>
             <a href="#">Автокамеры</a>
@@ -538,12 +457,10 @@
         </div>
       </div>
     </div>
-
     <script src="../js/main.js"></script>
     <script
       type="text/javascript"
-      src="../slick-1.8.1/slick/slick.min.js"
-    ></script>
+      src="../slick-1.8.1/slick/slick.min.js"></script>
     <script src="../js/jquery.leanModal.min.js"></script>
   </body>
 </html>

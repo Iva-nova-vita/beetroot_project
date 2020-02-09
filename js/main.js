@@ -3,32 +3,26 @@ function init() {
   //вычитуем файл goods.json
   $.getJSON("../goods/goods.json", goodsOut);
 }
-
 function goodsOut(data) {
   // вывод товаров на страницы по категориям
   let id = 0;
   let out = "";
   for (let key in data) {
     id = `${data[key].category}`;
-    
-      out += '<div class="productItem">';
-      out += `<img src="${data[key].img}" alt="">`;
-      out += `<p>${data[key].name}</p>`;
-      out += `<span>${data[key].brend}</span>`;
-      out += `<h3>${data[key].description}</h3>`;
-      out += `<div><span>${data[key].cost} грн</span>`;
-      out += `<button><img src="../images/heart.png" alt="heart" /></button>`;
-      out += `<button class="addToCart" data-id="${key}"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>`;
-      out += "</div></div>";
-      $(`#category${id}`).append(out);
-      out="";
+    out += '<div class="productItem">';
+    out += `<img src="${data[key].img}" alt="">`;
+    out += `<p>${data[key].name}</p>`;
+    out += `<span>${data[key].brend}</span>`;
+    out += `<h3>${data[key].description}</h3>`;
+    out += `<div><span>${data[key].cost} грн</span>`;
+    out += `<button><img src="../images/heart.png" alt="heart" /></button>`;
+    out += `<button class="addToCart" data-id="${key}"><img src="../images/VectorCart.png" alt="shopping-bag" /></button>`;
+    out += "</div></div>";
+    $(`#category${id}`).append(out);
+    out = "";
   }
   $(".addToCart").on("click", addToCart);
 }
-
-
-
-
 function addToCart() {
   //добавляем товар в корзину
   let id = $(this).attr("data-id");
@@ -41,12 +35,10 @@ function addToCart() {
   showMiniCart();
   saveCart();
 }
-
 function saveCart() {
   //сохраняю корзину в localStorage
   localStorage.setItem("cart", JSON.stringify(cart)); //корзину в строку
 }
-
 function showMiniCart(data) {
   //показываю мини корзину
   $.getJSON("../goods/goods.json", function(data) {
@@ -61,7 +53,6 @@ function showMiniCart(data) {
     $(".totalCost").html(totalCost);
   });
 }
-
 function loadCart() {
   //проверяю есть ли в localStorage запись cart
   if (localStorage.getItem("cart")) {
@@ -70,11 +61,7 @@ function loadCart() {
     showMiniCart();
   }
 }
-
-//--------------------------------------------------------
-
 $('a[href="#cart"]').on("click", showCart);
-
 function showCart() {
   //вывод корзины
   if (!isEmpty(cart)) {
@@ -87,7 +74,6 @@ function showCart() {
       for (let id in cart) {
         out += '<div class="productItemInCart">';
         out += `<div><img src="${goods[id].img}" class="imgGoodsInCart"></div>`;
-
         out += ` <div class="description"><p>${goods[id].name} </p>`;
         out += ` <p class="cost">${goods[id].cost} грн</p>`;
         out += ` <span>${cart[id]}</span>`;
@@ -106,7 +92,6 @@ function showCart() {
     });
   }
 }
-
 function delGoods() {
   //удаляем товар из корзины
   let id = $(this).attr("data-id");
@@ -115,7 +100,6 @@ function delGoods() {
   showCart();
   showMiniCart();
 }
-
 function plusGoods() {
   //увеличиваем кол-во товара в корзине
   let id = $(this).attr("data-id");
@@ -124,7 +108,6 @@ function plusGoods() {
   showCart();
   showMiniCart();
 }
-
 function minusGoods() {
   //уменьшаем кол-во товара в корзине
   let id = $(this).attr("data-id");
@@ -137,65 +120,25 @@ function minusGoods() {
   showCart();
   showMiniCart();
 }
-
 function saveCart() {
   //сохраняю корзину в localStorage
   localStorage.setItem("cart", JSON.stringify(cart)); //корзину в строку
 }
-
 function isEmpty(object) {
   //проверка корзины на пустоту
   for (let key in object) if (object.hasOwnProperty(key)) return true;
   return false;
 }
-
-//------------------------------------------------------------
-
 $(function() {
-  /**
-   * active link in nav
-   */
-
-  /*let pathname_url = window.location.pathname;
-    let href_url = window.location.href;
-
-    $("nav li").each(function () {
-
-        let link = $(this).find("a").attr("href");
-
-        if(pathname_url == link || href_url == link) {
-
-            $(this).addClass("active");
-
-        }
-
-    });*/
   init();
   showMiniCart();
   loadCart();
-
-  // $("#popGoodsSlider").slick({
-  //   infinite: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1
-  // });
-
   $("#popGoodsSlider").slick({
-    //dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
-      // {
-      //   breakpoint: 1090,
-      //   settings: {
-      //     slidesToShow: 3,
-      //     slidesToScroll: 3,
-      //     infinite: true,
-      //     dots: true
-      //   }
-      //},
       {
         breakpoint: 1090,
         settings: {
@@ -221,7 +164,6 @@ $(function() {
       }
     ]
   });
-
   $("#bannersSlider").slick({
     infinite: true,
     slidesToShow: 1,
@@ -231,7 +173,6 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 3000
   });
-
   $("a[rel*=leanModal]").leanModal({
     top: 75,
     overlay: 0.4,

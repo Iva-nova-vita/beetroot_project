@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -661,12 +660,9 @@ button[type="submit"] {
 #menu__toggle {
   opacity: 0; }
 
-/* стилизуем кнопку */
 .menu__btn {
   display: flex;
-  /* используем flex для центрирования содержимого */
   align-items: center;
-  /* центрируем содержимое кнопки */
   position: absolute;
   top: 13px;
   left: 20px;
@@ -675,7 +671,6 @@ button[type="submit"] {
   cursor: pointer;
   z-index: 1; }
 
-/* добавляем "гамбургер" */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -694,7 +689,6 @@ button[type="submit"] {
   content: "";
   top: 8px; }
 
-/* контейнер меню */
 .menu__box {
   display: block;
   position: absolute;
@@ -712,10 +706,9 @@ button[type="submit"] {
     .menu__box {
       width: 100vw; } }
 
-/* элементы меню */
 .menu__item {
   display: block;
-  padding: 20px 24px;
+  padding: 22px 24px;
   color: #333;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -1296,6 +1289,8 @@ button[type="submit"] {
   .news p {
     font-size: 18px;
     color: #828282; }
+  .news div {
+    padding-left: 25px; }
 
 .newsImg {
   background-size: cover;
