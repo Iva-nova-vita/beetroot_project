@@ -1636,10 +1636,10 @@ div#cart.modal {
     right: 10px; }
   .description .plusGoods {
     position: absolute;
-    right: 100px; }
+    right: 60px; }
   .description .minusGoods {
     position: absolute;
-    right: 85px; }
+    right: 45px; }
   .description a {
     display: block;
     text-decoration: underline;

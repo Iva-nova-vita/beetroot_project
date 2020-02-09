@@ -56,7 +56,7 @@ function showMiniCart(data) {
 function loadCart() {
   //проверяю есть ли в localStorage запись cart
   if (localStorage.getItem("cart")) {
-    // если есть - расширфровываю и записываю в переменную cart
+    // если есть - расшифровываю и записываю в переменную cart
     cart = JSON.parse(localStorage.getItem("cart"));
     showMiniCart();
   }
