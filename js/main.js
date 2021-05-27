@@ -1,10 +1,8 @@
-let cart = {}; // корзина
+let cart = {}; 
 function init() {
-  //вычитуем файл goods.json
   $.getJSON("../goods/goods.json", goodsOut);
 }
 function goodsOut(data) {
-  // вывод товаров на страницы по категориям
   let id = 0;
   let out = "";
   for (let key in data) {
@@ -24,23 +22,19 @@ function goodsOut(data) {
   $(".addToCart").on("click", addToCart);
 }
 function addToCart() {
-  //добавляем товар в корзину
   let id = $(this).attr("data-id");
-  // console.log(id);
   if (cart[id] == undefined) {
-    cart[id] = 1; //если в корзине нет товара - делаем равным 1
+    cart[id] = 1;
   } else {
-    cart[id]++; //если такой товар есть - увеличиваю на единицу
+    cart[id]++;
   }
   showMiniCart();
   saveCart();
 }
 function saveCart() {
-  //сохраняю корзину в localStorage
-  localStorage.setItem("cart", JSON.stringify(cart)); //корзину в строку
+  localStorage.setItem("cart", JSON.stringify(cart)); 
 }
 function showMiniCart(data) {
-  //показываю мини корзину
   $.getJSON("../goods/goods.json", function(data) {
     let goods = data;
     let totalCost = 0;
@@ -54,16 +48,13 @@ function showMiniCart(data) {
   });
 }
 function loadCart() {
-  //проверяю есть ли в localStorage запись cart
   if (localStorage.getItem("cart")) {
-    // если есть - расшифровываю и записываю в переменную cart
     cart = JSON.parse(localStorage.getItem("cart"));
     showMiniCart();
   }
 }
 $('a[href="#cart"]').on("click", showCart);
 function showCart() {
-  //вывод корзины
   if (!isEmpty(cart)) {
     $("#cart").html("Корзина пуста!");
   } else {
@@ -93,7 +84,6 @@ function showCart() {
   }
 }
 function delGoods() {
-  //удаляем товар из корзины
   let id = $(this).attr("data-id");
   delete cart[id];
   saveCart();
@@ -101,7 +91,6 @@ function delGoods() {
   showMiniCart();
 }
 function plusGoods() {
-  //увеличиваем кол-во товара в корзине
   let id = $(this).attr("data-id");
   cart[id]++;
   saveCart();
@@ -109,7 +98,6 @@ function plusGoods() {
   showMiniCart();
 }
 function minusGoods() {
-  //уменьшаем кол-во товара в корзине
   let id = $(this).attr("data-id");
   if (cart[id] == 1) {
     delete cart[id];
@@ -121,11 +109,9 @@ function minusGoods() {
   showMiniCart();
 }
 function saveCart() {
-  //сохраняю корзину в localStorage
-  localStorage.setItem("cart", JSON.stringify(cart)); //корзину в строку
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
 function isEmpty(object) {
-  //проверка корзины на пустоту
   for (let key in object) if (object.hasOwnProperty(key)) return true;
   return false;
 }
